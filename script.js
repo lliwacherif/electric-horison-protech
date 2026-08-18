@@ -207,7 +207,7 @@ lightboxTriggers.forEach((trigger) => {
   trigger.addEventListener("click", () => {
     if (!lightbox || !lightboxImage || !lightboxCaption) return;
 
-    const title = trigger.dataset.title || "Réalisation France BTP";
+    const title = trigger.dataset.title || "Réalisation HORISON PRO TECH";
     lightboxImage.src = trigger.dataset.lightbox;
     lightboxImage.alt = title;
     lightboxCaption.textContent = title;
