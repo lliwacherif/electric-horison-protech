@@ -3,33 +3,28 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://francebtp.vercel.app/</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://francebtp.vercel.app/assets/Horison%20protech%20cover%20image.jpeg</image:loc>
-      <image:title>Horizon ProTech renovation interieure Paris 16e 75016 et Paris 17e 75017</image:title>
-      <image:caption>Horizon ProTech entreprise tout corps d etat peinture carrelage plomberie electricite placo et salle de bain a Paris 75016 et 75017</image:caption>
+      <image:title>HORISON PRO TECH électricité des bâtiments Paris et Île-de-France</image:title>
+      <image:caption>HORISON PRO TECH entreprise d électricité des bâtiments à Paris et en Île-de-France</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://francebtp.vercel.app/assets/logo%20horison%20pro%20tech%20pro.jpeg</image:loc>
-      <image:title>Logo Horizon ProTech</image:title>
+      <image:title>Logo HORISON PRO TECH</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://francebtp.vercel.app/colonnes-electriques-basse-tension/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
     <image:image>
-      <image:loc>https://francebtp.vercel.app/assets/portfolio-01.png</image:loc>
-      <image:title>Plafond architectural renovation cuisine Paris 16e</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://francebtp.vercel.app/assets/portfolio-05.png</image:loc>
-      <image:title>Cuisine renovee carrelage Paris 16e 17e</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://francebtp.vercel.app/assets/portfolio-10.png</image:loc>
-      <image:title>Salle de bain pierre naturelle Paris 75016</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://francebtp.vercel.app/assets/portfolio-13.png</image:loc>
-      <image:title>Renovation complete salle de bain Paris 16e 17e</image:title>
+      <image:loc>https://francebtp.vercel.app/assets/Horison%20protech%20cover%20image.jpeg</image:loc>
+      <image:title>Colonnes électriques basse tension HORISON PRO TECH</image:title>
+      <image:caption>Spécialiste colonnes électriques basse tension NF C 14-100 Enedis SéQuélec</image:caption>
     </image:image>
   </url>
 </urlset>

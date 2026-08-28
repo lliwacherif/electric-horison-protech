@@ -336,7 +336,7 @@ svg:not([width]) {
 .primary-nav {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 22px;
 }
 
 .primary-nav > a:not(.nav-cta) {
@@ -3004,6 +3004,129 @@ svg:not([width]) {
   }
   .hero-feature-chips {
     grid-template-columns: 1fr;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 22px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.breadcrumb a {
+  color: rgba(255, 255, 255, 0.86);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: var(--white);
+}
+
+.breadcrumb [aria-current="page"] {
+  color: var(--green-soft);
+}
+
+.method-section {
+  background: var(--platinum);
+}
+
+.method-grid {
+  display: grid;
+  gap: 22px;
+  margin-top: 48px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.method-step {
+  position: relative;
+  padding: 28px 24px 26px;
+  border: 1px solid rgba(26, 46, 73, 0.1);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.method-step__index {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 16px;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(0, 99, 166, 0.1);
+  color: var(--cerulean);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.method-step h3 {
+  margin: 0 0 10px;
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: 1.12rem;
+}
+
+.method-step p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.specialty-banner {
+  display: grid;
+  gap: 28px;
+  margin-top: 36px;
+  padding: 36px 34px;
+  border: 1px solid rgba(0, 99, 166, 0.16);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(135deg, rgba(0, 99, 166, 0.08), rgba(145, 194, 30, 0.08)),
+    var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (min-width: 820px) {
+  .specialty-banner {
+    grid-template-columns: minmax(0, 1.4fr) auto;
+    align-items: center;
+  }
+}
+
+.specialty-banner h3 {
+  margin: 8px 0 12px;
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+}
+
+.specialty-banner p {
+  margin: 0;
+  max-width: 62ch;
+  color: var(--muted);
+}
+
+.specialty-banner .eyebrow {
+  margin-bottom: 4px;
+}
+
+.specialty-banner .button {
+  justify-self: start;
+  white-space: nowrap;
+}
+
+@media (max-width: 1400px) and (min-width: 901px) {
+  .primary-nav {
+    gap: 16px;
+  }
+
+  .primary-nav > a:not(.nav-cta) {
+    font-size: 0.78rem;
   }
 }
 
