@@ -225,7 +225,66 @@ lightbox?.addEventListener("close", () => {
   if (lightboxImage) lightboxImage.src = "";
 });
 
-// Google Ads conversion tracking
+const ADS_ID = "AW-18382085095";
+const COOKIE_KEY = "hpt-cookie-consent";
+
+function loadGoogleAds() {
+  if (window.__hptAdsLoaded) return;
+  window.__hptAdsLoaded = true;
+
+  const script = document.createElement("script");
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${ADS_ID}`;
+  document.head.appendChild(script);
+
+  if (typeof gtag === "function") {
+    gtag("js", new Date());
+    gtag("config", ADS_ID);
+  }
+}
+
+function hideCookieBanner() {
+  document.querySelector("[data-cookie-banner]")?.remove();
+  document.body.classList.remove("has-cookie-banner");
+}
+
+function showCookieBanner() {
+  if (document.querySelector("[data-cookie-banner]")) return;
+
+  document.body.classList.add("has-cookie-banner");
+
+  const banner = document.createElement("div");
+  banner.className = "cookie-banner";
+  banner.setAttribute("data-cookie-banner", "");
+  banner.setAttribute("role", "dialog");
+  banner.setAttribute("aria-label", "Gestion des cookies");
+  banner.innerHTML = `
+    <p>Nous utilisons des cookies de mesure et de conversion (Google Ads) uniquement si vous acceptez. Le formulaire de contact fonctionne dans tous les cas. <a href="/politique-de-confidentialite/#cookies">En savoir plus</a>.</p>
+    <div class="cookie-banner__actions">
+      <button type="button" data-cookie-accept>Accepter</button>
+      <button type="button" data-cookie-refuse>Refuser</button>
+    </div>
+  `;
+  document.body.appendChild(banner);
+
+  banner.querySelector("[data-cookie-accept]")?.addEventListener("click", () => {
+    localStorage.setItem(COOKIE_KEY, "accepted");
+    loadGoogleAds();
+    hideCookieBanner();
+  });
+  banner.querySelector("[data-cookie-refuse]")?.addEventListener("click", () => {
+    localStorage.setItem(COOKIE_KEY, "refused");
+    hideCookieBanner();
+  });
+}
+
+const cookieChoice = localStorage.getItem(COOKIE_KEY);
+if (cookieChoice === "accepted") {
+  loadGoogleAds();
+} else if (!cookieChoice) {
+  showCookieBanner();
+}
+
 const contactForm = document.querySelector("[data-contact-form]");
 if (contactForm) {
   contactForm.addEventListener("submit", () => {
@@ -235,7 +294,6 @@ if (contactForm) {
   });
 }
 
-// Track direct WhatsApp and phone call actions as conversions
 document.querySelectorAll('a[href^="tel:"], a[href*="wa.me"]').forEach((link) => {
   link.addEventListener("click", () => {
     if (typeof gtag_report_conversion === "function") {

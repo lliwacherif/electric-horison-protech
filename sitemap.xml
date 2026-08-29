@@ -1,30 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://francebtp.vercel.app/</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://francebtp.vercel.app/assets/Horison%20protech%20cover%20image.jpeg</image:loc>
-      <image:title>HORISON PRO TECH électricité des bâtiments Paris et Île-de-France</image:title>
-      <image:caption>HORISON PRO TECH entreprise d électricité des bâtiments à Paris et en Île-de-France</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://francebtp.vercel.app/assets/logo%20horison%20pro%20tech%20pro.jpeg</image:loc>
-      <image:title>Logo HORISON PRO TECH</image:title>
-    </image:image>
+  </url>
+  <url>
+    <loc>https://francebtp.vercel.app/entreprise/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://francebtp.vercel.app/bureau-detudes/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://francebtp.vercel.app/expertises/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://francebtp.vercel.app/colonnes-electriques-basse-tension/</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://francebtp.vercel.app/realisations/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://francebtp.vercel.app/contact/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://francebtp.vercel.app/assets/Horison%20protech%20cover%20image.jpeg</image:loc>
-      <image:title>Colonnes électriques basse tension HORISON PRO TECH</image:title>
-      <image:caption>Spécialiste colonnes électriques basse tension NF C 14-100 Enedis SéQuélec</image:caption>
-    </image:image>
+  </url>
+  <url>
+    <loc>https://francebtp.vercel.app/mentions-legales/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://francebtp.vercel.app/politique-de-confidentialite/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

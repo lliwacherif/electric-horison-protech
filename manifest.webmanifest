@@ -1,15 +1,15 @@
 {
-  "name": "HORISON PRO TECH — Électricité des bâtiments",
+  "name": "HORISON PRO TECH — Électricité générale & bureau d'études",
   "short_name": "HORISON PRO TECH",
-  "description": "Électricité des bâtiments en Île-de-France : installation, rénovation, conformité NF C 15-100, colonnes électriques BT et maintenance.",
+  "description": "Entreprise d'électricité générale et bureau d'études en Île-de-France : de l'étude à la réalisation, résidentiel, tertiaire, commerces et ERP.",
   "lang": "fr-FR",
   "dir": "ltr",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#f4f5f9",
+  "background_color": "#f4f8fb",
   "theme_color": "#0063A6",
-  "categories": ["business", "home"],
+  "categories": ["business"],
   "icons": [
     {
       "src": "assets/logo horison pro tech pro.jpeg",

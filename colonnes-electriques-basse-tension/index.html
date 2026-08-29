@@ -1,32 +1,21 @@
 <!doctype html>
 <html lang="fr" dir="ltr" prefix="og: https://ogp.me/ns#">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18382085095"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'AW-18382085095');
-    </script>
-
-    <!-- Event snippet for Submit lead form conversion page -->
-    <script>
       function gtag_report_conversion(url) {
         var callback = function () {
-          if (typeof(url) != 'undefined') {
-            window.location = url;
-          }
+          if (typeof url !== "undefined") window.location = url;
         };
-        if (typeof gtag === 'function') {
-          gtag('event', 'conversion', {
-            'send_to': 'AW-18382085095/AmMiCO3frd8cEOe3ob1E',
-            'value': 1.0,
-            'currency': 'EUR',
-            'event_callback': callback
+        if (window.__hptAdsLoaded && typeof gtag === "function") {
+          gtag("event", "conversion", {
+            send_to: "AW-18382085095/AmMiCO3frd8cEOe3ob1E",
+            value: 1.0,
+            currency: "EUR",
+            event_callback: callback
           });
-        } else if (typeof(url) != 'undefined') {
+        } else if (typeof url !== "undefined") {
           window.location = url;
         }
         return false;
@@ -35,358 +24,150 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <!-- ═══════════════════════════════════════════════ -->
-    <!-- PRIMARY META TAGS                               -->
-    <!-- ═══════════════════════════════════════════════ -->
-    <title>Colonnes Électriques Basse Tension | HORISON PRO TECH — NF C 14-100 Île-de-France</title>
-    <meta
-      name="description"
-      content="HORISON PRO TECH : spécialiste des colonnes électriques basse tension en Île-de-France. Études, rénovation, modification et conformité NF C 14-100, Enedis &amp; SéQuélec. Sécurité – Qualité – Délais."
-    />
-    <meta name="keywords" content="HORISON PRO TECH, colonnes électriques basse tension, branchements collectifs électriques, NF C 14-100, Enedis, SéQuélec, rénovation colonne électrique, mise en conformité électrique, canalisations collectives, dérivations individuelles, DOE colonne électrique, diagnostic colonne électrique, Paris, Île-de-France, Jed Kechiche" />
+    <title>Colonnes électriques basse tension | HORISON PRO TECH</title>
+    <meta name="description" content="Expertise colonnes électriques BT en Île-de-France : diagnostic, études, rénovation et conformité NF C 14-100, Enedis et SéQuélec." />
+    <meta name="keywords" content="HORISON PRO TECH, électricité générale, bureau d'études, Paris, Île-de-France" />
     <meta name="author" content="HORISON PRO TECH" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow" />
     <meta name="theme-color" content="#0063A6" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="HORISON PRO TECH" />
-    <meta name="application-name" content="HORISON PRO TECH" />
-    <meta name="format-detection" content="telephone=yes" />
-
-    <!-- ═══════════════════════════════════════════════ -->
-    <!-- CANONICAL & LANGUAGE                            -->
-    <!-- ═══════════════════════════════════════════════ -->
     <link rel="canonical" href="https://francebtp.vercel.app/colonnes-electriques-basse-tension/" />
     <link rel="alternate" hreflang="fr" href="https://francebtp.vercel.app/colonnes-electriques-basse-tension/" />
     <link rel="alternate" hreflang="x-default" href="https://francebtp.vercel.app/colonnes-electriques-basse-tension/" />
-
-    <!-- ═══════════════════════════════════════════════ -->
-    <!-- GEO-TARGETING (Local SEO)                       -->
-    <!-- ═══════════════════════════════════════════════ -->
     <meta name="geo.region" content="FR-75" />
-    <meta name="geo.placename" content="Paris 12e arrondissement, Paris, Île-de-France" />
+    <meta name="geo.placename" content="Paris 12e, Île-de-France" />
     <meta name="geo.position" content="48.8475;2.3734" />
-    <meta name="ICBM" content="48.8475, 2.3734" />
-    <meta name="DC.title" content="HORISON PRO TECH - Colonnes Électriques Basse Tension Paris &amp; Île-de-France" />
-    <meta name="DC.creator" content="HORISON PRO TECH" />
-    <meta name="DC.subject" content="Colonnes électriques basse tension, rénovation, NF C 14-100, Enedis, SéQuélec, branchements collectifs" />
-    <meta name="DC.coverage" content="Paris, Île-de-France (IDF)" />
-    <meta name="DC.language" content="fr" />
-
-    <!-- ═══════════════════════════════════════════════ -->
-    <!-- OPEN GRAPH (Facebook, LinkedIn, WhatsApp)       -->
-    <!-- ═══════════════════════════════════════════════ -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="HORISON PRO TECH" />
-    <meta property="og:title" content="HORISON PRO TECH | Colonnes Électriques Basse Tension — NF C 14-100" />
-    <meta property="og:description" content="Entreprise spécialisée dans les colonnes électriques basse tension en Île-de-France. Études, rénovation, conformité NF C 14-100, Enedis &amp; SéQuélec. Sécurité – Qualité – Délais." />
+    <meta property="og:title" content="Colonnes électriques basse tension | HORISON PRO TECH" />
+    <meta property="og:description" content="Expertise colonnes électriques BT en Île-de-France : diagnostic, études, rénovation et conformité NF C 14-100, Enedis et SéQuélec." />
     <meta property="og:url" content="https://francebtp.vercel.app/colonnes-electriques-basse-tension/" />
     <meta property="og:image" content="https://francebtp.vercel.app/assets/Horison%20protech%20cover%20image.jpeg" />
-    <meta property="og:image:alt" content="HORISON PRO TECH - Colonnes électriques basse tension Paris et Île-de-France" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="fr_FR" />
-    <meta property="business:contact_data:street_address" content="61 rue de Lyon" />
-    <meta property="business:contact_data:locality" content="Paris" />
-    <meta property="business:contact_data:region" content="Île-de-France" />
-    <meta property="business:contact_data:postal_code" content="75012" />
-    <meta property="business:contact_data:country_name" content="France" />
-    <meta property="business:contact_data:phone_number" content="+33625772130" />
-
-    <!-- ═══════════════════════════════════════════════ -->
-    <!-- TWITTER / X CARD                                -->
-    <!-- ═══════════════════════════════════════════════ -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="HORISON PRO TECH | Colonnes Électriques Basse Tension" />
-    <meta name="twitter:description" content="Spécialiste des colonnes électriques basse tension en Île-de-France : conformité NF C 14-100, Enedis &amp; SéQuélec. Sécurité – Qualité – Délais." />
-    <meta name="twitter:image" content="https://francebtp.vercel.app/assets/Horison%20protech%20cover%20image.jpeg" />
-    <meta name="twitter:image:alt" content="HORISON PRO TECH - Colonnes électriques basse tension" />
-
-    <!-- ═══════════════════════════════════════════════ -->
-    <!-- FAVICONS & APP ICONS                            -->
-    <!-- ═══════════════════════════════════════════════ -->
-    <link rel="icon" type="image/jpeg" sizes="192x192" href="/assets/logo%20horison%20pro%20tech%20pro.jpeg" />
-    <link rel="icon" type="image/jpeg" sizes="32x32" href="/assets/logo%20horison%20pro%20tech%20pro.jpeg" />
-    <link rel="icon" type="image/jpeg" sizes="16x16" href="/assets/logo%20horison%20pro%20tech%20pro.jpeg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo%20horison%20pro%20tech%20pro.jpeg" />
-    <link rel="shortcut icon" href="/assets/logo%20horison%20pro%20tech%20pro.jpeg" />
+    <meta name="twitter:title" content="Colonnes électriques basse tension | HORISON PRO TECH" />
+    <meta name="twitter:description" content="Expertise colonnes électriques BT en Île-de-France : diagnostic, études, rénovation et conformité NF C 14-100, Enedis et SéQuélec." />
+    <link rel="icon" type="image/jpeg" href="/assets/logo%20horison%20pro%20tech%20pro.jpeg" />
+    <link rel="apple-touch-icon" href="/assets/logo%20horison%20pro%20tech%20pro.jpeg" />
     <link rel="manifest" href="/manifest.webmanifest" />
-
-    <!-- ═══════════════════════════════════════════════ -->
-    <!-- STRUCTURED DATA: LocalBusiness / Electrician    -->
-    <!-- ═══════════════════════════════════════════════ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Electrician",
       "@id": "https://francebtp.vercel.app/#business",
       "name": "HORISON PRO TECH",
-      "alternateName": ["HORISON PROTECH", "Horison Pro Tech", "Horizon ProTech"],
-      "description": "HORISON PRO TECH est une entreprise agile et structurée, spécialisée dans les colonnes électriques basse tension, garantissant une exécution fiable, documentée et maîtrisée de bout en bout.",
-      "slogan": "Sécurité – Qualité – Délais",
+      "alternateName": [
+            "HORISON PROTECH",
+            "Horison Pro Tech"
+      ],
+      "description": "HORISON PRO TECH est une entreprise d'électricité générale dotée d'une compétence intégrée de bureau d'études. De l'étude à la réalisation, pour le résidentiel, le tertiaire, les commerces et les ERP.",
+      "slogan": "De l'étude à la réalisation",
       "url": "https://francebtp.vercel.app",
       "knowsLanguage": "fr",
       "founder": {
-        "@type": "Person",
-        "name": "Jed Kechiche",
-        "jobTitle": "Directeur Général"
+            "@type": "Person",
+            "name": "Jed Kechiche",
+            "jobTitle": "Président"
       },
-      "keywords": "colonnes électriques basse tension, NF C 14-100, Enedis, SéQuélec, branchements collectifs, canalisations collectives, dérivations individuelles, DOE",
+      "keywords": "électricité générale, bureau d'études, NF C 15-100, colonnes électriques basse tension, NF C 14-100, tertiaire, ERP, rénovation électrique, Île-de-France",
       "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Direction et Chargé d'Affaires",
-        "telephone": "+33625772130",
-        "email": "horisonprotech@gmail.com",
-        "availableLanguage": ["French"],
-        "areaServed": ["Île-de-France", "Paris", "FR-75", "FR-IDF"]
+            "@type": "ContactPoint",
+            "contactType": "Direction",
+            "telephone": "+33625772130",
+            "email": "horisonprotech@gmail.com",
+            "availableLanguage": [
+                  "French"
+            ],
+            "areaServed": [
+                  "Île-de-France",
+                  "Paris"
+            ]
       },
       "logo": "https://francebtp.vercel.app/assets/logo%20horison%20pro%20tech%20pro.jpeg",
-      "image": [
-        "https://francebtp.vercel.app/assets/Horison%20protech%20cover%20image.jpeg",
-        "https://francebtp.vercel.app/assets/portfolio-01.png",
-        "https://francebtp.vercel.app/assets/portfolio-05.png",
-        "https://francebtp.vercel.app/assets/portfolio-10.png",
-        "https://francebtp.vercel.app/assets/portfolio-13.png"
-      ],
+      "image": "https://francebtp.vercel.app/assets/Horison%20protech%20cover%20image.jpeg",
       "telephone": "+33625772130",
       "email": "horisonprotech@gmail.com",
       "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "61 rue de Lyon",
-        "addressLocality": "Paris",
-        "postalCode": "75012",
-        "addressRegion": "Île-de-France",
-        "addressCountry": "FR"
+            "@type": "PostalAddress",
+            "streetAddress": "61 rue de Lyon",
+            "addressLocality": "Paris",
+            "postalCode": "75012",
+            "addressRegion": "Île-de-France",
+            "addressCountry": "FR"
       },
       "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 48.8475,
-        "longitude": 2.3734
+            "@type": "GeoCoordinates",
+            "latitude": 48.8475,
+            "longitude": 2.3734
       },
       "areaServed": [
-        { "@type": "AdministrativeArea", "name": "Île-de-France" },
-        { "@type": "City", "name": "Paris" },
-        { "@type": "AdministrativeArea", "name": "Hauts-de-Seine (92)" },
-        { "@type": "AdministrativeArea", "name": "Seine-Saint-Denis (93)" },
-        { "@type": "AdministrativeArea", "name": "Val-de-Marne (94)" },
-        { "@type": "AdministrativeArea", "name": "Yvelines (78)" },
-        { "@type": "AdministrativeArea", "name": "Essonne (91)" },
-        { "@type": "AdministrativeArea", "name": "Val-d'Oise (95)" },
-        { "@type": "AdministrativeArea", "name": "Seine-et-Marne (77)" }
+            {
+                  "@type": "AdministrativeArea",
+                  "name": "Île-de-France"
+            },
+            {
+                  "@type": "City",
+                  "name": "Paris"
+            }
       ],
       "knowsAbout": [
-        "Colonnes électriques basse tension",
-        "Norme NF C 14-100",
-        "Spécifications techniques Enedis et SéQuélec",
-        "Canalisations collectives et distributeurs d'étage",
-        "Dérivations individuelles",
-        "Diagnostics préalables et relevés terrain",
-        "Études, plans d'exécution et synoptiques",
-        "Dossier des Ouvrages Exécutés (DOE)",
-        "Contrôles des couples de serrage et sertissage",
-        "Mesures électriques et traçabilité photographique"
+            "Électricité générale du bâtiment",
+            "Bureau d'études électriques",
+            "CFO / CFA",
+            "DOE",
+            "Norme NF C 15-100",
+            "Colonnes électriques basse tension",
+            "Norme NF C 14-100"
       ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Services de Colonnes Électriques Basse Tension HORISON PRO TECH",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Diagnostics et Relevés Terrain",
-              "description": "Diagnostics visuels préalables pour vérifier les contraintes du bâtiment, interfaces et points ouverts, transformant les observations terrain en données fiables."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Études et Préparation",
-              "description": "Préparation des plans d'exécution, synoptiques, nomenclatures de matériels et phasages adaptés aux contraintes réelles du site."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Installation et Rénovation",
-              "description": "Travaux sur canalisations collectives, distributeurs et dérivations individuelles, dépose et remplacement sécurisé des anciens systèmes."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Conformité et Autocontrôle",
-              "description": "Processus rigoureux de contrôle qualité incluant vérifications visuelles, contrôle des assemblages (couples de serrage, sertissage), mesures électriques et preuves photographiques."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "SAV et Maintenance",
-              "description": "Système réactif pour qualifier les demandes, sécuriser les zones et corriger les écarts ou anomalies avec une traçabilité complète."
-            }
-          }
-        ]
-      },
+      "taxID": "992975490",
       "sameAs": [
-        "https://wa.me/33625772130"
+            "https://wa.me/33625772130"
       ]
-    }
+}
     </script>
-
-    <!-- ═══════════════════════════════════════════════ -->
-    <!-- STRUCTURED DATA: WebSite                        -->
-    <!-- ═══════════════════════════════════════════════ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "@id": "https://francebtp.vercel.app/#website",
       "name": "HORISON PRO TECH",
-      "alternateName": "HORISON PROTECH",
       "url": "https://francebtp.vercel.app",
-      "description": "Site officiel de HORISON PRO TECH, entreprise d'électricité des bâtiments en Île-de-France.",
       "inLanguage": "fr",
       "publisher": {
-        "@type": "Organization",
-        "name": "HORISON PRO TECH",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://francebtp.vercel.app/assets/logo%20horison%20pro%20tech%20pro.jpeg"
-        }
+            "@type": "Organization",
+            "name": "HORISON PRO TECH"
       }
-    }
+}
     </script>
-
-    <!-- ═══════════════════════════════════════════════ -->
-    <!-- STRUCTURED DATA: FAQPage                        -->
-    <!-- ═══════════════════════════════════════════════ -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Qu'est-ce qu'une colonne électrique basse tension et quand la rénover ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Une colonne électrique basse tension est l'ouvrage qui achemine l'électricité depuis le réseau public de distribution jusqu'aux compteurs individuels des logements dans un immeuble. Une rénovation ou mise en conformité est nécessaire en cas de vétusté, d'augmentation de puissance (ex. bornes de recharge, pompes à chaleur), de non-conformité aux normes NF C 14-100 ou lors d'exigences d'Enedis / SéQuélec."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quelles normes et exigences applique HORISON PRO TECH ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "HORISON PRO TECH intervient dans le strict respect de la norme NF C 14-100 et des prescriptions techniques d'Enedis et de SéQuélec. Nous appliquons des points d'arrêt stricts et garantissons une traçabilité intégrale de chaque étape avec fourniture d'un DOE complet."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Comment réduisez-vous les nuisances dans les immeubles occupés ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Nous protégeons scrupuleusement les cheminements, réduisons le bruit et la poussière grâce à une aspiration à la source, balisons les zones de travail et laissons les parties communes propres et sécurisées à la fin de chaque journée."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Que contient le Dossier des Ouvrages Exécutés (DOE) remis en fin de chantier ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Le DOE remis par HORISON PRO TECH contient l'ensemble des plans d'exécution conformes, synoptiques mis à jour, fiches techniques des matériels installés, attestations de conformité, procès-verbaux d'autocontrôles (couples de serrage, mesures d'isolement et de continuité) et preuves photographiques détaillées."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Comment est structurée l'équipe opérationnelle de HORISON PRO TECH ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Dirigée par Jed Kechiche, notre force opérationnelle s'appuie sur six techniciens répartis en trois binômes complémentaires (Référent technique / Installateur + Technicien Basse Tension), pilotés par un Chargé d'Affaires unique et un Référent QSE."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quelle est votre zone d'intervention ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "HORISON PRO TECH intervient en priorité sur l'ensemble de la région Île-de-France (Paris 75, 92, 93, 94, 78, 91, 95, 77) pour les syndics de copropriété, bailleurs sociaux, gestionnaires d'immeubles et maîtres d'ouvrage."
-          }
-        }
-      ]
-    }
-    </script>
-
-    <!-- ═══════════════════════════════════════════════ -->
-    <!-- STRUCTURED DATA: WebPage                        -->
-    <!-- ═══════════════════════════════════════════════ -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "@id": "https://francebtp.vercel.app/colonnes-electriques-basse-tension/#webpage",
-      "url": "https://francebtp.vercel.app/colonnes-electriques-basse-tension/",
-      "name": "Colonnes Électriques Basse Tension | HORISON PRO TECH — Île-de-France",
-      "description": "Page dédiée aux colonnes électriques basse tension : études, rénovation, modification et conformité NF C 14-100, Enedis & SéQuélec.",
-      "inLanguage": "fr-FR",
-      "isPartOf": { "@id": "https://francebtp.vercel.app/#website" },
-      "about": { "@id": "https://francebtp.vercel.app/#business" },
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://francebtp.vercel.app/assets/Horison%20protech%20cover%20image.jpeg"
-      }
-    }
-    </script>
-
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Accueil",
-          "item": "https://francebtp.vercel.app/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Colonnes électriques basse tension",
-          "item": "https://francebtp.vercel.app/colonnes-electriques-basse-tension/"
-        }
+            {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://francebtp.vercel.app/"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Colonnes électriques basse tension",
+                  "item": "https://francebtp.vercel.app/colonnes-electriques-basse-tension/"
+            }
       ]
-    }
+}
     </script>
-
-    <!-- ═══════════════════════════════════════════════ -->
-    <!-- PRECONNECT, FONTS & ASSETS                      -->
-    <!-- ═══════════════════════════════════════════════ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link rel="dns-prefetch" href="https://formsubmit.co" />
-    <!-- Preload the hero backdrop -->
     <link rel="preload" as="image" href="/assets/Horison%20protech%20cover%20image.jpeg" fetchpriority="high" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/styles.css" />
     <script src="/script.js" defer></script>
   </head>
-
-  <body itemscope itemtype="https://schema.org/WebPage">
+  <body>
     <a class="skip-link" href="#main-content">Aller au contenu</a>
-
     <header class="site-header" data-header>
       <div class="container nav-shell">
         <a class="brand" href="/" aria-label="HORISON PRO TECH, retour à l'accueil">
@@ -395,444 +176,94 @@
           </span>
           <span class="brand__text">
             <strong>HORISON PRO TECH</strong>
-            <small>Électricité des bâtiments</small>
+            <small>Électricité générale &amp; bureau d'études</small>
           </span>
         </a>
-
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="primary-navigation"
-          aria-label="Ouvrir le menu"
-          data-menu-toggle
-        >
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu" data-menu-toggle>
           <span></span>
           <span></span>
         </button>
-
         <nav class="primary-nav" id="primary-navigation" aria-label="Navigation principale" data-nav>
           <a href="/">Accueil</a>
-          <a href="#a-propos">À propos</a>
-          <a href="#expertises">Expertises</a>
+          <a href="/entreprise/">L'entreprise</a>
+          <a href="/bureau-detudes/">Bureau d'études</a>
+          <a href="/expertises/">Expertises</a>
           <a href="/colonnes-electriques-basse-tension/" class="is-active" aria-current="page">Colonnes BT</a>
-          <a href="#engagements">Engagements</a>
-          <a href="#equipe">Équipe</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
-          <a class="nav-cta" href="#contact">
-            Demander une étude
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14M13 6l6 6-6 6" />
-            </svg>
+          <a href="/realisations/">Réalisations</a>
+          <a class="nav-cta" href="/contact/">
+            Demander un devis
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
           </a>
         </nav>
       </div>
     </header>
-
     <main id="main-content">
-      <!-- ═══════════════════════════════════════════════ -->
-      <!-- HERO SECTION                                    -->
-      <!-- ═══════════════════════════════════════════════ -->
-      <section class="hero" id="accueil" aria-labelledby="hero-title">
+      <section class="hero hero--editorial" id="accueil" aria-labelledby="hero-title">
         <div class="hero__media" aria-hidden="true"></div>
         <div class="hero__overlay" aria-hidden="true"></div>
-        <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
-        <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
-
         <div class="container hero__inner">
           <div class="hero__content" data-reveal>
-            <nav class="breadcrumb" aria-label="Fil d'Ariane">
-              <a href="/">Accueil</a>
-              <span aria-hidden="true">/</span>
-              <span aria-current="page">Colonnes électriques basse tension</span>
-            </nav>
-            <p class="eyebrow eyebrow--light">
-              <span></span>
-              Spécialiste Colonnes Électriques Basse Tension • Île-de-France
-            </p>
-            <h1 id="hero-title">
-              HORISON PRO TECH<br />
-              <span>Sécurité – Qualité – Délais</span>
-            </h1>
-            <p class="hero__lead">
-              Une entreprise agile et structurée, spécialisée dans les colonnes électriques basse tension,
-              garantissant une exécution fiable, documentée et maîtrisée de bout en bout dans le strict
-              respect des normes <strong>NF C 14-100</strong> et des exigences <strong>Enedis &amp; SéQuélec</strong>.
-            </p>
-
+            <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a><span aria-hidden="true">/</span><span aria-current="page">Colonnes électriques basse tension</span></nav>
+            <p class="eyebrow eyebrow--light"><span></span> Expertise en développement • Île-de-France</p>
+            <h1 id="hero-title">Colonnes électriques<br /><span>basse tension</span></h1>
+            <p class="hero__lead">HORISON PRO TECH développe une expertise ciblée sur les colonnes électriques collectives : diagnostic, études, rénovation et mise en conformité selon la norme <strong>NF C 14-100</strong> et les prescriptions <strong>Enedis</strong> et <strong>SéQuélec</strong>, de la préparation des travaux au DOE.</p>
             <div class="hero__actions">
-              <a class="button button--primary" href="#contact">
-                Demander un diagnostic / devis
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M5 12h14M13 6l6 6-6 6" />
-                </svg>
-              </a>
-              <a class="button button--ghost" href="#methode">
-                Notre méthode en 7 étapes
-              </a>
-            </div>
-
-            <div class="hero__proof" aria-label="Nos engagements clés">
-              <div>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="m5 12 4 4L19 6" />
-                </svg>
-                <span><strong>Conformité NF C 14-100</strong><small>Exigences Enedis &amp; SéQuélec</small></span>
-              </div>
-              <div>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="m5 12 4 4L19 6" />
-                </svg>
-                <span><strong>Interlocuteur Unique</strong><small>Chargé d'Affaires &amp; DOE complet</small></span>
-              </div>
+              <a class="button button--primary" href="/contact/">Demander un diagnostic <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+              <a class="button button--ghost" href="#methode">Notre méthode</a>
             </div>
           </div>
-
-          <aside class="hero-card" aria-label="Expertises HORISON PRO TECH" data-reveal data-reveal-delay="180">
+          <aside class="hero-card" data-reveal data-reveal-delay="180">
             <div class="hero-card__top">
-              <span class="hero-card__number">3</span>
-              <p>binômes terrain experts + 1 Chargé d'Affaires dédié</p>
+              <span class="hero-card__number">BT</span>
+              <p>une expertise que nous construisons chantier après chantier</p>
             </div>
             <div class="hero-card__line"></div>
             <ul>
-              <li>Diagnostics &amp; relevés terrain</li>
-              <li>Études, plans &amp; synoptiques</li>
-              <li>Canalisations collectives &amp; dérivations</li>
-              <li>Autocontrôles &amp; mesures de conformité</li>
-              <li>Remise de DOE complet</li>
-              <li>SAV réactif &amp; maintenance</li>
+              <li>Diagnostic de l'existant</li>
+              <li>Études &amp; dimensionnement</li>
+              <li>Rénovation &amp; modernisation</li>
+              <li>Conformité NF C 14-100</li>
+              <li>Préparation, réalisation, DOE</li>
             </ul>
-            <address>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
-                <circle cx="12" cy="10" r="2.5" />
-              </svg>
-              61 rue de Lyon, 75012 Paris
-            </address>
+            <address><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></svg> 61 rue de Lyon, 75012 Paris</address>
           </aside>
         </div>
-
-        <a class="scroll-cue" href="#a-propos" aria-label="Découvrir l'entreprise">
-          <span class="scroll-cue__mouse"><i></i></span>
-          <small>Découvrir</small>
-        </a>
-
         <div class="hero__curve" aria-hidden="true"></div>
       </section>
 
-            <!-- ═══════════════════════════════════════════════ -->
-      <!-- ABOUT / SÉCURITÉ ABSOLUE & TRANSPARENCE       -->
-      <!-- ═══════════════════════════════════════════════ -->
-      <!-- ═══════════════════════════════════════════════ -->
-      <!-- ABOUT / SÉCURITÉ ABSOLUE & TRANSPARENCE       -->
-      <!-- ═══════════════════════════════════════════════ -->
-      <section class="about section-pad" id="a-propos" aria-labelledby="about-title">
-        <div class="container">
-          <div class="section-heading" data-reveal>
-            <div>
-              <p class="eyebrow">
-                <span></span>
-                Sécurité Absolue &amp; Transparence
-              </p>
-              <h2 id="about-title">L'exigence technique au service<br />de vos colonnes électriques.</h2>
-            </div>
-            <div class="section-heading__badges">
-              <span class="header-kpi-badge"><span class="kpi-dot"></span> Norme NF C 14-100</span>
-              <span class="header-kpi-badge"><span class="kpi-dot"></span> Exigences Enedis</span>
-              <span class="header-kpi-badge"><span class="kpi-dot"></span> 100% Traçabilité DOE</span>
-            </div>
-          </div>
-
-          <div class="cards-bento-grid" style="margin-top: 48px;">
-            <!-- CARD 1: Large Featured Golden Safety Shield Card -->
-            <div class="bento-feature-card bento-feature-card--hero" data-reveal>
-              <div class="bento-feature-card__top">
-                <div class="bento-icon bento-icon--gold">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    <path d="m9 12 2 2 4-4"/>
-                  </svg>
-                </div>
-                <div class="status-badge status-badge--gold">
-                  <span class="pulse-dot"></span>
-                  Principe Directeur Inviolable
-                </div>
-              </div>
-
-              <div class="hero-quote-box">
-                <p class="hero-quote-text">« Droit et devoir d'arrêter immédiatement les travaux si les conditions de sécurité ou de conformité ne sont pas réunies. »</p>
-              </div>
-
-              <div class="hero-feature-chips">
-                <div class="feature-chip">
-                  <div class="feature-chip__icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <strong>Norme NF C 14-100</strong>
-                    <span>Conformité technique absolue</span>
-                  </div>
-                </div>
-
-                <div class="feature-chip">
-                  <div class="feature-chip__icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
-                      <path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <strong>Enedis &amp; SéQuélec</strong>
-                    <span>Prescriptions strictes respectées</span>
-                  </div>
-                </div>
-
-                <div class="feature-chip">
-                  <div class="feature-chip__icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <strong>Zéro Tolérance Risque</strong>
-                    <span>Protection des usagers &amp; équipes</span>
-                  </div>
-                </div>
-
-                <div class="feature-chip">
-                  <div class="feature-chip__icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                      <polyline points="14 2 14 8 20 8"/>
-                      <line x1="16" y1="13" x2="8" y2="13"/>
-                      <line x1="16" y1="17" x2="8" y2="17"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <strong>Traçabilité &amp; Preuves</strong>
-                    <span>Dossier DOE horodaté complet</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- CARD 2: Interlocuteur Unique -->
-            <div class="bento-feature-card" data-reveal data-reveal-delay="100">
-              <div class="bento-feature-card__top">
-                <div class="bento-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                    <circle cx="9" cy="7" r="4"/>
-                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                  </svg>
-                </div>
-                <div class="status-badge">Pilotage Dédié</div>
-              </div>
-              <h3 class="card-title">Interlocuteur Unique Dédié</h3>
-              <div class="card-action-list">
-                <div class="card-action-item">
-                  <span class="action-check">✓</span>
-                  <span>Relevés d'infrastructures &amp; diagnostic</span>
-                </div>
-                <div class="card-action-item">
-                  <span class="action-check">✓</span>
-                  <span>Synoptiques &amp; schémas certifiés</span>
-                </div>
-                <div class="card-action-item">
-                  <span class="action-check">✓</span>
-                  <span>Pilotage direct sans intermédiaire</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- CARD 3: Milieu Occupé Protégé -->
-            <div class="bento-feature-card" data-reveal data-reveal-delay="200">
-              <div class="bento-feature-card__top">
-                <div class="bento-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                    <polyline points="9 22 9 12 15 12 15 22"/>
-                  </svg>
-                </div>
-                <div class="status-badge">Milieu Occupé</div>
-              </div>
-              <h3 class="card-title">Protection de l'Habitat</h3>
-              <div class="card-action-list">
-                <div class="card-action-item">
-                  <span class="action-check">✓</span>
-                  <span>Aspiration des poussières à la source</span>
-                </div>
-                <div class="card-action-item">
-                  <span class="action-check">✓</span>
-                  <span>Balisage &amp; protection systématique des sols</span>
-                </div>
-                <div class="card-action-item">
-                  <span class="action-check">✓</span>
-                  <span>Parties communes propres chaque soir</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- CARD 4: Autocontrôles & DOE -->
-            <div class="bento-feature-card" data-reveal data-reveal-delay="300">
-              <div class="bento-feature-card__top">
-                <div class="bento-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                    <polyline points="22 4 12 14.01 9 11.01"/>
-                  </svg>
-                </div>
-                <div class="status-badge">Contrôle Qualité</div>
-              </div>
-              <h3 class="card-title">Autocontrôles &amp; DOE Complet</h3>
-              <div class="card-action-list">
-                <div class="card-action-item">
-                  <span class="action-check">✓</span>
-                  <span>Couples de serrage étalonnés et vérifiés</span>
-                </div>
-                <div class="card-action-item">
-                  <span class="action-check">✓</span>
-                  <span>Mesures d'isolement &amp; continuité</span>
-                </div>
-                <div class="card-action-item">
-                  <span class="action-check">✓</span>
-                  <span>Dossier DOE avec photos horodatées</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ═══════════════════════════════════════════════ -->
-      <!-- EXPERTISES (SERVICES)                           -->
-      <!-- ═══════════════════════════════════════════════ -->
-      <section class="services section-pad" id="expertises" aria-labelledby="services-title">
+      <section class="services section-pad" id="expertises" aria-labelledby="col-title">
         <div class="container">
           <div class="services__intro" data-reveal>
-            <p class="eyebrow">
-              <span></span>
-              Nos Expertises
-            </p>
-            <h2 id="services-title">
-              Un service complet de bout en bout<br />pour vos colonnes électriques.
-            </h2>
-            <p class="services__lead">
-              De l'origine du réseau au point de livraison individuel, HORISON PRO TECH prend en charge
-              chaque étape technique avec des méthodes éprouvées et un haut niveau d'exigence.
-            </p>
+            <p class="eyebrow"><span></span> Prestations</p>
+            <h2 id="col-title">De l'état des lieux au dossier de fin de chantier.</h2>
           </div>
-
           <div class="services__grid">
-            <article class="service-card" id="service-diagnostics" data-reveal>
-              <span class="service-card__icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <circle cx="11" cy="11" r="8"></circle>
-                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
-              </span>
-              <h3>Diagnostics &amp; Relevés Terrain</h3>
-              <p>
-                Réalisation de diagnostics visuels préalables pour vérifier les contraintes du bâtiment,
-                les interfaces techniques et les points ouverts, transformant les observations terrain en données fiables.
-              </p>
-              <ul>
-                <li>Relevés d'infrastructures existantes</li>
-                <li>Identification des interfaces &amp; contraintes</li>
-                <li>Analyse des risques d'exploitation</li>
-                <li>Rapports techniques d'état des lieux</li>
-              </ul>
+            <article class="service-card" data-reveal>
+              <span class="service-card__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>
+              <h3>Diagnostic de l'existant</h3>
+              <p>Relevés techniques, contraintes du bâtiment, interfaces et points ouverts, pour fonder l'étude sur des données terrain.</p>
             </article>
-
-            <article class="service-card" id="service-etudes" data-reveal data-reveal-delay="60">
-              <span class="service-card__icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                  <polyline points="14 2 14 8 20 8"></polyline>
-                  <line x1="16" y1="13" x2="8" y2="13"></line>
-                  <line x1="16" y1="17" x2="8" y2="17"></line>
-                </svg>
-              </span>
-              <h3>Études &amp; Préparation</h3>
-              <p>
-                Conception et préparation des plans d'exécution, synoptiques électriques,
-                nomenclatures des matériels et phasages adaptés aux contraintes réelles du site.
-              </p>
-              <ul>
-                <li>Plans d'exécution &amp; schémas unifilaires</li>
-                <li>Dimensionnement selon NF C 14-100</li>
-                <li>Nomenclatures matériel conformes Enedis</li>
-                <li>Phasage d'intervention optimisé</li>
-              </ul>
+            <article class="service-card" data-reveal data-reveal-delay="60">
+              <span class="service-card__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg></span>
+              <h3>Études, conception, dimensionnement</h3>
+              <p>Architectures, nomenclatures et préparation conformes NF C 14-100, Enedis et SéQuélec.</p>
             </article>
-
-            <article class="service-card" id="service-installation" data-reveal data-reveal-delay="120">
-              <span class="service-card__icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                </svg>
-              </span>
-              <h3>Installation &amp; Rénovation</h3>
-              <p>
-                Exécution des travaux sur les canalisations collectives, distributeurs d'étage et dérivations individuelles,
-                avec gestion rigoureuse de la dépose et du remplacement des anciens systèmes.
-              </p>
-              <ul>
-                <li>Canalisations collectives Basse Tension</li>
-                <li>Distributeurs &amp; boîtiers de raccordement</li>
-                <li>Dérivations individuelles jusqu'au compteur</li>
-                <li>Dépose et évacuation sécurisée de l'ancien</li>
-              </ul>
+            <article class="service-card" data-reveal data-reveal-delay="120">
+              <span class="service-card__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></span>
+              <h3>Rénovation &amp; modernisation</h3>
+              <p>Remplacement et mise à niveau des canalisations collectives, distributeurs et dérivations individuelles.</p>
             </article>
-
-            <article class="service-card" id="service-conformite" data-reveal data-reveal-delay="180">
-              <span class="service-card__icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg>
-              </span>
-              <h3>Conformité &amp; Autocontrôle</h3>
-              <p>
-                Application d'un processus rigoureux de contrôle qualité : vérifications visuelles,
-                contrôle des assemblages (couples de serrage, sertissage), mesures électriques et preuves photographiques.
-              </p>
-              <ul>
-                <li>Contrôle des couples de serrage étalonnés</li>
-                <li>Vérification du sertissage des connexions</li>
-                <li>Mesures d'isolement et de continuité</li>
-                <li>Dossier de traçabilité photographique</li>
-              </ul>
+            <article class="service-card" data-reveal data-reveal-delay="180">
+              <span class="service-card__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+              <h3>Mise en conformité</h3>
+              <p>Travaux et contrôles selon les prescriptions NF C 14-100, Enedis et SéQuélec.</p>
             </article>
-
-            <article class="service-card" id="service-sav" data-reveal data-reveal-delay="240">
-              <span class="service-card__icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-                </svg>
-              </span>
-              <h3>SAV &amp; Maintenance</h3>
-              <p>
-                Mise en place d'un système réactif pour qualifier les demandes, sécuriser les zones d'intervention
-                et corriger les écarts ou anomalies avec une traçabilité complète de chaque intervention.
-              </p>
-              <ul>
-                <li>Qualification immédiate des demandes</li>
-                <li>Mise en sécurité rapide des installations</li>
-                <li>Traitement et levée des réserves</li>
-                <li>Historique et traçabilité d'intervention</li>
-              </ul>
+            <article class="service-card" data-reveal data-reveal-delay="240">
+              <span class="service-card__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></span>
+              <h3>Préparation, réalisation, DOE</h3>
+              <p>Phasage, exécution, autocontrôles et remise du dossier des ouvrages exécutés.</p>
             </article>
           </div>
-
-          <p class="services__note" data-reveal>
-            Un projet de colonne électrique en copropriété ou en tertiaire ?
-            <a href="#contact">Contactez notre Chargé d'Affaires</a> pour une étude personnalisée.
-          </p>
         </div>
       </section>
 
@@ -840,525 +271,146 @@
         <div class="container">
           <div class="section-heading" data-reveal>
             <div>
-              <p class="eyebrow">
-                <span></span>
-                Méthode d'intervention
-              </p>
-              <h2 id="methode-title">Notre méthode en 7 étapes<br />pour vos colonnes électriques.</h2>
+              <p class="eyebrow"><span></span> Méthode</p>
+              <h2 id="methode-title">Une démarche progressive,<br />adaptée à chaque immeuble.</h2>
             </div>
           </div>
-
           <div class="method-grid">
-            <article class="method-step" data-reveal>
-              <span class="method-step__index">01</span>
-              <h3>Diagnostic terrain</h3>
-              <p>Relevés d'infrastructures, contraintes du bâtiment, interfaces et points ouverts transformés en données fiables.</p>
-            </article>
-            <article class="method-step" data-reveal data-reveal-delay="40">
-              <span class="method-step__index">02</span>
-              <h3>Études &amp; synoptiques</h3>
-              <p>Plans d'exécution, schémas unifilaires et nomenclatures conformes NF C 14-100, Enedis et SéQuélec.</p>
-            </article>
-            <article class="method-step" data-reveal data-reveal-delay="80">
-              <span class="method-step__index">03</span>
-              <h3>Phasage chantier</h3>
-              <p>Organisation des interventions en milieu occupé, information des résidents et sécurisation des parties communes.</p>
-            </article>
-            <article class="method-step" data-reveal data-reveal-delay="120">
-              <span class="method-step__index">04</span>
-              <h3>Installation / rénovation</h3>
-              <p>Canalisations collectives, distributeurs d'étage, dérivations individuelles et dépose sécurisée de l'existant.</p>
-            </article>
-            <article class="method-step" data-reveal data-reveal-delay="160">
-              <span class="method-step__index">05</span>
-              <h3>Autocontrôles</h3>
-              <p>Couples de serrage, sertissage, mesures d'isolement et de continuité, preuves photographiques horodatées.</p>
-            </article>
-            <article class="method-step" data-reveal data-reveal-delay="200">
-              <span class="method-step__index">06</span>
-              <h3>DOE complet</h3>
-              <p>Remise du dossier des ouvrages exécutés : plans définitifs, fiches matériels, PV de contrôles et traçabilité.</p>
-            </article>
-            <article class="method-step" data-reveal data-reveal-delay="240">
-              <span class="method-step__index">07</span>
-              <h3>SAV &amp; suivi</h3>
-              <p>Qualification des demandes, mise en sécurité, levée des réserves et historique d'intervention documenté.</p>
-            </article>
+            <article class="method-step" data-reveal><span class="method-step__index">01</span><h3>Diagnostic terrain</h3><p>Relevés d'infrastructures, contraintes du bâtiment et points ouverts.</p></article>
+            <article class="method-step" data-reveal data-reveal-delay="40"><span class="method-step__index">02</span><h3>Études &amp; synoptiques</h3><p>Plans, schémas et nomenclatures conformes NF C 14-100, Enedis et SéQuélec.</p></article>
+            <article class="method-step" data-reveal data-reveal-delay="80"><span class="method-step__index">03</span><h3>Phasage</h3><p>Organisation en milieu occupé et information des résidents.</p></article>
+            <article class="method-step" data-reveal data-reveal-delay="120"><span class="method-step__index">04</span><h3>Réalisation</h3><p>Canalisations collectives, distributeurs, dérivations et dépose sécurisée.</p></article>
+            <article class="method-step" data-reveal data-reveal-delay="160"><span class="method-step__index">05</span><h3>Contrôles &amp; DOE</h3><p>Mesures, preuves et dossier des ouvrages exécutés.</p></article>
           </div>
         </div>
       </section>
 
-            <!-- ═══════════════════════════════════════════════ -->
-      <!-- ENGAGEMENTS & RSE                               -->
-      <!-- ═══════════════════════════════════════════════ -->
-      <!-- ═══════════════════════════════════════════════ -->
-      <!-- ENGAGEMENTS & RSE                               -->
-      <!-- ═══════════════════════════════════════════════ -->
-      <section class="rse-section section-pad" id="engagements" aria-labelledby="rse-title">
-        <div class="container">
-          <div class="section-heading" data-reveal>
-            <div>
-              <p class="eyebrow">
-                <span></span>
-                Responsabilité &amp; Valeurs
-              </p>
-              <h2 id="rse-title">Nos Engagements &amp; RSE</h2>
-            </div>
-            <div class="section-heading__badges">
-              <span class="header-kpi-badge"><span class="kpi-dot"></span> 0 Nuisance</span>
-              <span class="header-kpi-badge"><span class="kpi-dot"></span> 100% Éco-Filières</span>
-              <span class="header-kpi-badge"><span class="kpi-dot"></span> 100% Emploi Déclaré</span>
-            </div>
-          </div>
-
-          <div class="rse-cards-grid" style="margin-top: 48px;">
-            <!-- RSE Card 1 -->
-            <div class="rse-pillar-card" data-reveal>
-              <div class="rse-pillar-card__top">
-                <div class="rse-pillar-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                    <polyline points="9 22 9 12 15 12 15 22"/>
-                  </svg>
-                </div>
-                <div class="rse-badge">Milieu Occupé</div>
-              </div>
-              
-              <h3 class="rse-card-heading">Relation Occupants &amp; Propreté</h3>
-
-              <div class="rse-stat-callout">
-                <span class="rse-stat-number">100%</span>
-                <span class="rse-stat-text">Parties communes rendues propres chaque soir</span>
-              </div>
-
-              <div class="rse-action-list">
-                <div class="rse-action-row">
-                  <span class="rse-check">✓</span>
-                  <span>Protection systématique des sols et cheminements</span>
-                </div>
-                <div class="rse-action-row">
-                  <span class="rse-check">✓</span>
-                  <span>Aspiration continue des poussières à la source</span>
-                </div>
-                <div class="rse-action-row">
-                  <span class="rse-check">✓</span>
-                  <span>Nettoyage soigné à chaque fin de journée</span>
-                </div>
-                <div class="rse-action-row">
-                  <span class="rse-check">✓</span>
-                  <span>Information préalable affichée aux résidents</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- RSE Card 2 -->
-            <div class="rse-pillar-card" data-reveal data-reveal-delay="120">
-              <div class="rse-pillar-card__top">
-                <div class="rse-pillar-icon rse-pillar-icon--eco">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7"/>
-                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
-                  </svg>
-                </div>
-                <div class="rse-badge rse-badge--eco">100% Filières Agréées</div>
-              </div>
-
-              <h3 class="rse-card-heading">Responsabilité Environnementale</h3>
-
-              <div class="rse-stat-callout">
-                <span class="rse-stat-number">100%</span>
-                <span class="rse-stat-text">Traçabilité &amp; valorisation certifiée des déchets</span>
-              </div>
-
-              <div class="rse-action-list">
-                <div class="rse-action-row">
-                  <span class="rse-check">✓</span>
-                  <span>Tri sélectif à la source (cuivre, métaux, gaines)</span>
-                </div>
-                <div class="rse-action-row">
-                  <span class="rse-check">✓</span>
-                  <span>Évacuation des DEEE vers filières agréées</span>
-                </div>
-                <div class="rse-action-row">
-                  <span class="rse-check">✓</span>
-                  <span>Bordereaux de suivi des déchets (BSD) certifiés</span>
-                </div>
-                <div class="rse-action-row">
-                  <span class="rse-check">✓</span>
-                  <span>Zéro résidu polluant laissé sur le chantier</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- RSE Card 3 -->
-            <div class="rse-pillar-card" data-reveal data-reveal-delay="240">
-              <div class="rse-pillar-card__top">
-                <div class="rse-pillar-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    <path d="M12 8v4m0 4h.01"/>
-                  </svg>
-                </div>
-                <div class="rse-badge">Social &amp; Éthique</div>
-              </div>
-
-              <h3 class="rse-card-heading">Éthique &amp; Emploi Durable</h3>
-
-              <div class="rse-stat-callout">
-                <span class="rse-stat-number">100%</span>
-                <span class="rse-stat-text">Techniciens qualifiés &amp; habilités en continu</span>
-              </div>
-
-              <div class="rse-action-list">
-                <div class="rse-action-row">
-                  <span class="rse-check">✓</span>
-                  <span>Emploi 100% direct, régulier et déclaré</span>
-                </div>
-                <div class="rse-action-row">
-                  <span class="rse-check">✓</span>
-                  <span>Prévention proactive du travail dissimulé</span>
-                </div>
-                <div class="rse-action-row">
-                  <span class="rse-check">✓</span>
-                  <span>Formations continues aux habilitations BT</span>
-                </div>
-                <div class="rse-action-row">
-                  <span class="rse-check">✓</span>
-                  <span>Respect inconditionnel des personnes &amp; mixité</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-            <!-- ═══════════════════════════════════════════════ -->
-      <!-- TEAM & OPERATIONAL STRUCTURE                    -->
-      <!-- ═══════════════════════════════════════════════ -->
-      <section class="team-section section-pad" id="equipe" aria-labelledby="team-title">
-        <div class="container">
-          <div class="section-heading" data-reveal>
-            <div>
-              <p class="eyebrow">
-                <span></span>
-                Moyens Humains &amp; Organisation
-              </p>
-              <h2 id="team-title">Capacité Opérationnelle &amp; Équipe</h2>
-            </div>
-            <div class="section-heading__right">
-              <p>
-                Une structure agile et hautement qualifiée, dimensionnée pour piloter
-                des chantiers simultanés sur l'ensemble de Paris et de l'Île-de-France.
-              </p>
-            </div>
-          </div>
-
-          <div class="team-grid-modern" style="margin-top: 48px;">
-            <!-- Card 1: Direction -->
-            <div class="team-card-modern" data-reveal>
-              <div class="team-card-modern__header">
-                <div class="team-card-modern__avatar">
-                  <span>JK</span>
-                </div>
-                <div class="team-card-modern__title-wrap">
-                  <span class="team-card-modern__badge">Direction Générale</span>
-                  <h3>Jed Kechiche</h3>
-                </div>
-              </div>
-              <p class="team-card-modern__role-desc">
-                Pilotage stratégique de l'entreprise, garant de la vision technique et du respect inconditionnel des engagements de sécurité et de conformité.
-              </p>
-              <div class="team-card-modern__points">
-                <div class="point-chip">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                  <span>Garant Sécurité &amp; Qualité</span>
-                </div>
-                <div class="point-chip">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                  <span>Conformité NF C 14-100</span>
-                </div>
-                <div class="point-chip">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                  <span>Interlocuteur Maîtrises d'Ouvrage</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 2: 3 Binômes Terrain -->
-            <div class="team-card-modern" data-reveal data-reveal-delay="120">
-              <div class="team-card-modern__header">
-                <div class="team-card-modern__avatar team-card-modern__avatar--team">
-                  <span>3×2</span>
-                </div>
-                <div class="team-card-modern__title-wrap">
-                  <span class="team-card-modern__badge">Forces Terrain</span>
-                  <h3>6 Techniciens en 3 Binômes</h3>
-                </div>
-              </div>
-              <p class="team-card-modern__role-desc">
-                Chaque binôme complémentaire réunit un Référent Technique / Installateur et un Technicien Basse Tension axé sur la coordination et les autocontrôles.
-              </p>
-              <div class="team-card-modern__points">
-                <div class="point-chip">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                  <span>1 Référent Technique / Installateur</span>
-                </div>
-                <div class="point-chip">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                  <span>1 Technicien BT (DOE &amp; Suivi)</span>
-                </div>
-                <div class="point-chip">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/></svg>
-                  <span>Déploiement simultané Île-de-France</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 3: Pilotage Dédié -->
-            <div class="team-card-modern" data-reveal data-reveal-delay="240">
-              <div class="team-card-modern__header">
-                <div class="team-card-modern__avatar team-card-modern__avatar--support">
-                  <span>CA</span>
-                </div>
-                <div class="team-card-modern__title-wrap">
-                  <span class="team-card-modern__badge">Pilotage Centralisé</span>
-                  <h3>Chargé d'Affaires &amp; QSE</h3>
-                </div>
-              </div>
-              <p class="team-card-modern__role-desc">
-                Un Chargé d'Affaires dédié est votre contact unique pour le pilotage (études, planning, reporting), soutenu par un Référent QSE et un pôle support.
-              </p>
-              <div class="team-card-modern__points">
-                <div class="point-chip">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                  <span>Interlocuteur Unique Dédié</span>
-                </div>
-                <div class="point-chip">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="11" r="3"/></svg>
-                  <span>Référent QSE &amp; Sécurité</span>
-                </div>
-                <div class="point-chip">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                  <span>Planning &amp; Dossier DOE Complet</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ═══════════════════════════════════════════════ -->
-      <!-- FAQ SECTION                                     -->
-      <!-- ═══════════════════════════════════════════════ -->
-      <section class="faq section-pad" id="faq" aria-labelledby="faq-title">
-        <div class="container">
-          <div class="section-heading" data-reveal>
-            <div>
-              <p class="eyebrow eyebrow--light">
-                <span></span>
-                Questions fréquentes
-              </p>
-              <h2 id="faq-title">Tout savoir sur les colonnes électriques<br />et nos interventions</h2>
-            </div>
-          </div>
-
-          <div class="faq-list" data-reveal>
-            <details class="faq-item">
-              <summary>Qu'est-ce qu'une colonne électrique basse tension et quand la rénover ? <span aria-hidden="true">+</span></summary>
-              <p>Une colonne électrique basse tension est l'ouvrage collectif qui achemine l'énergie électrique depuis le coffret coupe-circuit principal d'un immeuble jusqu'aux compteurs des logements. Une rénovation s'impose en cas de vétusté des câbles ou boîtiers, de saturation de puissance (arrivée de bornes de recharge pour véhicules électriques ou pompes à chaleur), de non-conformité à la norme <strong>NF C 14-100</strong> ou lors d'une demande de transfert d'ouvrage vers le réseau <strong>Enedis</strong>.</p>
-            </details>
-
-            <details class="faq-item">
-              <summary>Quelles normes et exigences applique HORISON PRO TECH ? <span aria-hidden="true">+</span></summary>
-              <p>HORISON PRO TECH intervient dans le strict respect de la norme <strong>NF C 14-100</strong> et des spécifications techniques édictées par <strong>Enedis</strong> et <strong>SéQuélec</strong>. Chaque phase du chantier fait l'objet de points d'arrêt et de contrôles documentés (couples de serrage, continuités, isolements).</p>
-            </details>
-
-            <details class="faq-item">
-              <summary>Comment protégez-vous les occupants et les parties communes ? <span aria-hidden="true">+</span></summary>
-              <p>Nous garantissons un minimum de nuisances : protection des sols et cheminements, réduction de la poussière avec aspiration à la source, balisage sécurisé des zones d'intervention et nettoyage complet des parties communes chaque fin de journée.</p>
-            </details>
-
-            <details class="faq-item">
-              <summary>Que contient le Dossier des Ouvrages Exécutés (DOE) ? <span aria-hidden="true">+</span></summary>
-              <p>Le DOE complet remis à la fin du chantier compile les plans et synoptiques définitifs, les fiches techniques des matériels certifiés, les fiches d'autocontrôles (couples de serrage, mesures d'isolement) et les preuves photographiques de chaque raccordement.</p>
-            </details>
-
-            <details class="faq-item">
-              <summary>Quelle est votre capacité d'intervention et votre effectif ? <span aria-hidden="true">+</span></summary>
-              <p>Sous la direction de <strong>Jed Kechiche</strong>, notre équipe compte <strong>6 techniciens qualifiés répartis en 3 binômes terrain</strong> (Référent technique / Installateur + Technicien Basse Tension), coordonnées par un <strong>Chargé d'Affaires unique</strong> pour les études, le planning et le suivi.</p>
-            </details>
-
-            <details class="faq-item">
-              <summary>Quelle est votre zone d'intervention géographique ? <span aria-hidden="true">+</span></summary>
-              <p>HORISON PRO TECH intervient en priorité sur l'ensemble de la région <strong>Île-de-France (Paris 75 et tous les départements 92, 93, 94, 78, 91, 95, 77)</strong> pour les syndics de copropriété, bailleurs sociaux, gestionnaires de patrimoine et maîtres d'ouvrage.</p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <!-- ═══════════════════════════════════════════════ -->
-      <!-- CONTACT & DEVIS FORM                            -->
-      <!-- ═══════════════════════════════════════════════ -->
       <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
         <div class="contact__orb contact__orb--one" aria-hidden="true"></div>
         <div class="contact__orb contact__orb--two" aria-hidden="true"></div>
-
         <div class="container contact__grid">
           <div class="contact__content" data-reveal>
-            <p class="eyebrow eyebrow--light">
-              <span></span>
-              Contact &amp; Devis
-            </p>
-            <h2 id="contact-title">Un projet de colonne électrique ?<br /><span>Parlons-en dès aujourd'hui.</span></h2>
-            <p class="contact__lead">
-              Décrivez-nous votre besoin. Notre Chargé d'Affaires vous recontacte rapidement pour organiser un diagnostic
-              ou établir une étude technique personnalisée.
-            </p>
-
+            <p class="eyebrow eyebrow--light"><span></span> Contact &amp; Devis</p>
+            <h2 id="contact-title">Un projet de colonne électrique ?<br /><span>Parlons-en.</span></h2>
+            <p class="contact__lead">Décrivez-nous l'immeuble et les contraintes identifiées. Nous organisons un diagnostic ou une étude.</p>
             <div class="contact__details">
-              <a
-                href="https://maps.google.com/?q=61+rue+de+Lyon+75012+Paris"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="contact__icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
-                    <circle cx="12" cy="10" r="2.5" />
-                  </svg>
-                </span>
+              <a href="https://maps.google.com/?q=61+rue+de+Lyon+75012+Paris" target="_blank" rel="noopener noreferrer">
+                <span class="contact__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></svg></span>
                 <span><small>Siège social</small><strong>61 rue de Lyon<br />75012 Paris</strong></span>
               </a>
               <a href="tel:+33625772130">
-                <span class="contact__icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                  </svg>
-                </span>
-                <span><small>Téléphone direct</small><strong>06 25 77 21 30</strong></span>
+                <span class="contact__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <span><small>Téléphone</small><strong>06 25 77 21 30</strong></span>
               </a>
               <a href="https://wa.me/33625772130" target="_blank" rel="noopener noreferrer">
-                <span class="contact__icon" style="color:#25d366; border-color:rgba(37,211,102,0.35); background:rgba(37,211,102,0.1);">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M17.472 14.382c-.301-.15-1.767-.867-2.04-.966-.274-.101-.473-.15-.673.15-.199.299-.771.966-.946 1.165-.174.199-.349.224-.649.075-.3-.15-1.266-.464-2.41-1.484-.89-.794-1.49-1.775-1.665-2.074-.174-.3-.019-.462.13-.611.136-.134.301-.349.451-.524.15-.175.199-.299.299-.498.1-.2.05-.374-.025-.524-.075-.15-.672-1.62-.922-2.214-.244-.58-.492-.5-.675-.51-.174-.007-.373-.01-.573-.01-.2 0-.523.075-.797.373s-1.045 1.021-1.045 2.489c0 1.468 1.07 2.887 1.22 3.086.149.199 2.107 3.218 5.104 4.512.713.308 1.27.492 1.704.63.717.227 1.369.195 1.884.119.574-.085 1.767-.723 2.016-1.42.249-.697.249-1.295.174-1.42-.075-.124-.274-.199-.574-.348zM12.012 21.82h-.008a9.816 9.816 0 0 1-5.006-1.373l-.359-.213-3.724.976.994-3.63-.234-.372A9.82 9.82 0 0 1 2.2 11.96c0-5.422 4.41-9.832 9.832-9.832a9.78 9.78 0 0 1 6.962 2.888 9.78 9.78 0 0 1 2.88 6.952c-.004 5.424-4.416 9.832-9.862 9.832zM12.012 0C5.388 0 0 5.388 0 12.012c0 2.116.553 4.183 1.603 6.002L0 24l6.166-1.617a11.96 11.96 0 0 0 5.846 1.509h.005c6.623 0 12.011-5.389 12.011-12.013A11.935 11.935 0 0 0 20.53 3.52 11.94 11.94 0 0 0 12.012 0z"/>
-                  </svg>
-                </span>
-                <span><small>WhatsApp direct</small><strong>06 25 77 21 30</strong></span>
+                <span class="contact__icon" style="color:#25d366; border-color:rgba(37,211,102,0.35); background:rgba(37,211,102,0.1);"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.301-.15-1.767-.867-2.04-.966-.274-.101-.473-.15-.673.15-.199.299-.771.966-.946 1.165-.174.199-.349.224-.649.075-.3-.15-1.266-.464-2.41-1.484-.89-.794-1.49-1.775-1.665-2.074-.174-.3-.019-.462.13-.611.136-.134.301-.349.451-.524.15-.175.199-.299.299-.498.1-.2.05-.374-.025-.524-.075-.15-.672-1.62-.922-2.214-.244-.58-.492-.5-.675-.51-.174-.007-.373-.01-.573-.01-.2 0-.523.075-.797.373s-1.045 1.021-1.045 2.489c0 1.468 1.07 2.887 1.22 3.086.149.199 2.107 3.218 5.104 4.512.713.308 1.27.492 1.704.63.717.227 1.369.195 1.884.119.574-.085 1.767-.723 2.016-1.42.249-.697.249-1.295.174-1.42-.075-.124-.274-.199-.574-.348zM12.012 21.82h-.008a9.816 9.816 0 0 1-5.006-1.373l-.359-.213-3.724.976.994-3.63-.234-.372A9.82 9.82 0 0 1 2.2 11.96c0-5.422 4.41-9.832 9.832-9.832a9.78 9.78 0 0 1 6.962 2.888 9.78 9.78 0 0 1 2.88 6.952c-.004 5.424-4.416 9.832-9.862 9.832zM12.012 0C5.388 0 0 5.388 0 12.012c0 2.116.553 4.183 1.603 6.002L0 24l6.166-1.617a11.96 11.96 0 0 0 5.846 1.509h.005c6.623 0 12.011-5.389 12.011-12.013A11.935 11.935 0 0 0 20.53 3.52 11.94 11.94 0 0 0 12.012 0z"/></svg></span>
+                <span><small>WhatsApp</small><strong>06 25 77 21 30</strong></span>
               </a>
               <a href="mailto:horisonprotech@gmail.com">
-                <span class="contact__icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                    <polyline points="22,6 12,13 2,6"/>
-                  </svg>
-                </span>
+                <span class="contact__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
                 <span><small>Email</small><strong>horisonprotech@gmail.com</strong></span>
               </a>
             </div>
-
             <div class="contact__promise">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="m5 12 4 4L19 6" />
-              </svg>
-              Sécurité, qualité, respect des délais et interlocuteur unique dédié.
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6" /></svg>
+              De l'étude à la réalisation, un interlocuteur unique.
             </div>
           </div>
-
           <div class="form-card" data-reveal data-reveal-delay="160">
             <div class="form-card__heading">
               <div>
-                <small>Votre demande d'intervention</small>
+                <small>Votre demande</small>
                 <h3>Comment pouvons-nous vous accompagner ?</h3>
               </div>
               <span class="form-card__step">Réponse sous 24h</span>
             </div>
-
             <div class="form-mode" role="group" aria-label="Type de formulaire">
-              <button class="is-active" type="button" data-form-mode="simple">
-                Contact rapide
-              </button>
-              <button type="button" data-form-mode="detailed">
-                Étude &amp; Devis détaillé
-              </button>
+              <button class="is-active" type="button" data-form-mode="simple">Contact rapide</button>
+              <button type="button" data-form-mode="detailed">Étude &amp; devis détaillé</button>
               <span class="form-mode__indicator" aria-hidden="true"></span>
             </div>
-
-            <form action="https://formsubmit.co/horisonprotech@gmail.com" method="POST" data-contact-form>
-              <input type="hidden" name="_subject" value="Nouvelle demande colonnes électriques BT — HORISON PRO TECH" />
+            <form action="https://formsubmit.co/horisonprotech@gmail.com" method="POST" enctype="multipart/form-data" data-contact-form>
+              <input type="hidden" name="_subject" value="Demande colonnes électriques BT — HORISON PRO TECH" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="Type_de_demande" value="Contact rapide" data-request-type />
-
               <div class="form-row">
                 <label class="field">
-                  <span>Nom complet &amp; Entreprise / Syndic</span>
-                  <input type="text" name="Nom" placeholder="Votre nom et structure" autocomplete="name" required />
+                  <span>Nom / société</span>
+                  <input type="text" name="Societe" placeholder="Raison sociale ou nom" autocomplete="organization" required />
                 </label>
                 <label class="field">
-                  <span>Adresse email</span>
-                  <input
-                    type="email"
-                    name="Email"
-                    placeholder="contact@exemple.fr"
-                    autocomplete="email"
-                    required
-                  />
+                  <span>Nom du contact</span>
+                  <input type="text" name="Nom" placeholder="Votre nom" autocomplete="name" required />
                 </label>
               </div>
-
               <div class="form-row">
                 <label class="field">
-                  <span>Numéro de téléphone</span>
+                  <span>Adresse email</span>
+                  <input type="email" name="Email" placeholder="contact@exemple.fr" autocomplete="email" required />
+                </label>
+                <label class="field">
+                  <span>Téléphone</span>
                   <input type="tel" name="Telephone" placeholder="06 00 00 00 00" autocomplete="tel" required />
+                </label>
+              </div>
+              <div class="form-row">
+                <label class="field">
+                  <span>Vous êtes</span>
+                  <select name="Vous_etes" required>
+                    <option value="" selected disabled>Sélectionner</option>
+                    <option>Particulier</option>
+                    <option>Entreprise</option>
+                    <option>Promoteur</option>
+                    <option>Architecte</option>
+                    <option>Bureau d'études</option>
+                    <option>Maître d'œuvre</option>
+                    <option>Gestionnaire immobilier</option>
+                    <option>Collectivité</option>
+                    <option>Autre</option>
+                  </select>
                 </label>
                 <label class="field">
                   <span>Type de projet</span>
                   <select name="Type_de_projet">
                     <option value="" selected disabled>Sélectionner le type de besoin</option>
-                    <option>Diagnostic &amp; Audit préalable</option>
-                    <option>Rénovation complète colonne BT</option>
-                    <option>Modification / Déplacement colonne</option>
-                    <option>Mise en conformité NF C 14-100</option>
-                    <option>Remplacement dérivation individuelle</option>
-                    <option>Maintenance &amp; SAV réactif</option>
-                    <option>Autre demande</option>
+                    <option>Résidentiel</option>
+                    <option>Tertiaire</option>
+                    <option>Commerce</option>
+                    <option>ERP</option>
+                    <option>Rénovation / mise en conformité</option>
+                    <option>Étude électrique</option>
+                    <option>Colonnes électriques BT</option>
+                    <option>Maintenance</option>
+                    <option>Autre</option>
                   </select>
                 </label>
               </div>
-
               <fieldset class="detailed-fields" data-detailed-fields disabled aria-hidden="true">
                 <div class="form-row">
                   <label class="field">
                     <span>Type de bâtiment</span>
                     <select name="Type_de_batiment">
                       <option value="" selected disabled>Choisir le type d'immeuble</option>
+                      <option>Logement / maison</option>
                       <option>Copropriété résidentielle</option>
-                      <option>Immeuble tertiaire / Bureaux</option>
-                      <option>Bailleur social / Logements collectifs</option>
-                      <option>Établissement recevant du public (ERP)</option>
+                      <option>Immeuble tertiaire / bureaux</option>
+                      <option>Commerce</option>
+                      <option>ERP</option>
                       <option>Autre</option>
                     </select>
                   </label>
                   <label class="field">
-                    <span>Nombre d'étages / Logements</span>
-                    <input
-                      type="text"
-                      name="Nombre_etages_logements"
-                      placeholder="Ex: R+5, 18 logements"
-                    />
+                    <span>Nombre d'étages / logements</span>
+                    <input type="text" name="Nombre_etages_logements" placeholder="Ex: R+5, 18 logements" />
                   </label>
                 </div>
                 <div class="form-row">
                   <label class="field">
-                    <span>Lieu des travaux (Ville ou CP)</span>
-                    <input
-                      type="text"
-                      name="Localisation"
-                      placeholder="Ex: Paris 75012, Boulogne..."
-                      autocomplete="postal-code"
-                    />
+                    <span>Localisation du projet</span>
+                    <input type="text" name="Localisation" placeholder="Ville ou code postal" autocomplete="postal-code" />
                   </label>
                   <label class="field">
-                    <span>Délai d'intervention souhaité</span>
+                    <span>Délai souhaité</span>
                     <select name="Delai">
                       <option value="" selected disabled>Quand souhaitez-vous intervenir ?</option>
                       <option>Urgent / Dès que possible</option>
@@ -1370,97 +422,88 @@
                   </label>
                 </div>
               </fieldset>
-
               <label class="field">
-                <span>Description de votre projet</span>
-                <textarea
-                  name="Message"
-                  rows="5"
-                  placeholder="Décrivez votre besoin, les caractéristiques de l'immeuble ou les contraintes identifiées..."
-                  required
-                ></textarea>
+                <span>Description du projet</span>
+                <textarea name="Message" rows="5" placeholder="Décrivez votre besoin, le type de bâtiment et les contraintes identifiées..." required></textarea>
               </label>
-
+              <label class="field">
+                <span>Pièces jointes (plans, CCTP, photos, cahier des charges)</span>
+                <input type="file" name="Pieces_jointes" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx,.dwg,.zip" multiple />
+              </label>
+              <label class="field field--check">
+                <input type="checkbox" name="Consentement" value="Oui" required />
+                <span>J'accepte d'être recontacté au sujet de cette demande. Les données sont traitées conformément à la <a href="/politique-de-confidentialite/">politique de confidentialité</a>.</span>
+              </label>
               <div class="form-card__footer">
-                <p>
-                  En soumettant ce formulaire, vous acceptez d'être recontacté par le Chargé d'Affaires de HORISON PRO TECH.
-                </p>
+                <p>Réponse sous 24h ouvrées. Un interlocuteur unique suit votre dossier.</p>
                 <button class="button button--submit" type="submit">
-                  Envoyer ma demande d'étude
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M5 12h14M13 6l6 6-6 6" />
-                  </svg>
+                  Envoyer ma demande
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
                 </button>
               </div>
             </form>
           </div>
         </div>
       </section>
+
     </main>
-
-    <footer class="site-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
-      <div class="container">
-        <a class="footer-brand" href="/">
-          <span class="footer-brand__logo">
-            <img src="/assets/logo%20horison%20pro%20tech%20pro.jpeg" alt="Logo HORISON PRO TECH" width="48" height="48" loading="lazy" />
-          </span>
-          <span>HORISON PRO TECH</span>
-        </a>
-
-        <div class="footer-seo">
-          <p><strong>HORISON PRO TECH — Spécialiste des colonnes électriques basse tension</strong></p>
-          <p>
-            Études, rénovation, modification et mise en conformité des branchements collectifs électriques —
-            Norme <strong>NF C 14-100</strong>, prescriptions <strong>Enedis</strong> et <strong>SéQuélec</strong>.
-          </p>
-          <p>
-            <strong>Direction :</strong> Jed Kechiche ·
-            <strong>Contact direct :</strong> <a href="tel:+33625772130">06 25 77 21 30</a> ·
-            <a href="mailto:horisonprotech@gmail.com">horisonprotech@gmail.com</a> ·
-            61 rue de Lyon, 75012 Paris
-          </p>
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-shell">
+        <div class="footer-grid">
+          <div class="footer-brand-block">
+            <a class="footer-brand" href="/">
+              <span class="footer-brand__logo">
+                <img src="/assets/logo%20horison%20pro%20tech%20pro.jpeg" alt="Logo HORISON PRO TECH" width="48" height="48" loading="lazy" />
+              </span>
+              <span>HORISON PRO TECH</span>
+            </a>
+            <p>Entreprise d'électricité générale &amp; bureau d'études. De l'étude à la réalisation. Résidentiel • Tertiaire • Commerces • ERP</p>
+          </div>
+          <nav class="footer-col" aria-label="L'entreprise">
+            <h3>L'entreprise</h3>
+            <a href="/entreprise/">Qui sommes-nous</a>
+            <a href="/entreprise/#equipe">Notre équipe</a>
+            <a href="/entreprise/#engagements">Nos engagements</a>
+          </nav>
+          <nav class="footer-col" aria-label="Bureau d'études">
+            <h3>Bureau d'études</h3>
+            <a href="/bureau-detudes/">Études &amp; conception</a>
+            <a href="/bureau-detudes/#cfo-cfa">CFO / CFA</a>
+            <a href="/bureau-detudes/#doe">Dossiers d'exécution &amp; DOE</a>
+          </nav>
+          <nav class="footer-col" aria-label="Expertises">
+            <h3>Nos expertises</h3>
+            <a href="/expertises/">Résidentiel, tertiaire, ERP</a>
+            <a href="/colonnes-electriques-basse-tension/">Colonnes électriques BT</a>
+            <a href="/realisations/">Réalisations</a>
+            <a href="/contact/">Contact</a>
+          </nav>
+          <div class="footer-col">
+            <h3>Coordonnées</h3>
+            <p><a href="tel:+33625772130">06 25 77 21 30</a></p>
+            <p><a href="mailto:horisonprotech@gmail.com">horisonprotech@gmail.com</a></p>
+            <p>61 rue de Lyon, 75012 Paris</p>
+            <p>SIREN 992 975 490<br />SIRET 992 975 490 00010<br />NAF 43.34Z</p>
+          </div>
         </div>
-
-        <nav class="footer-nav" aria-label="Navigation pied de page">
-          <a href="/">Accueil</a>
-          <a href="#a-propos">À propos</a>
-          <a href="#expertises">Expertises</a>
-          <a href="#methode">Méthode</a>
-          <a href="#engagements">Engagements</a>
-          <a href="#equipe">Équipe</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact &amp; Devis</a>
-        </nav>
-
-        <p style="margin-top:1.25rem;">© 2026 HORISON PRO TECH. Tous droits réservés.</p>
-        <a href="#accueil" aria-label="Retour en haut de la page">
-          Retour en haut
-          <span aria-hidden="true">↑</span>
-        </a>
+        <div class="footer-legal">
+          <p>© 2026 HORISON PRO TECH — Tous droits réservés</p>
+          <nav aria-label="Informations légales">
+            <a href="/mentions-legales/">Mentions légales</a>
+            <a href="/politique-de-confidentialite/">Politique de confidentialité</a>
+            <a href="/politique-de-confidentialite/#cookies">Gestion des cookies</a>
+          </nav>
+        </div>
       </div>
     </footer>
-
-    <a
-      class="whatsapp-float"
-      href="https://wa.me/33625772130"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Contacter HORISON PRO TECH sur WhatsApp au 06 25 77 21 30"
-    >
+    <a class="whatsapp-float" href="https://wa.me/33625772130" target="_blank" rel="noopener noreferrer" aria-label="Contacter HORISON PRO TECH sur WhatsApp au 06 25 77 21 30">
       <span class="whatsapp-float__pulse" aria-hidden="true"></span>
       <span class="whatsapp-float__label">06 25 77 21 30</span>
-      <span class="whatsapp-float__icon">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true">
-          <path d="M17.472 14.382c-.301-.15-1.767-.867-2.04-.966-.274-.101-.473-.15-.673.15-.199.299-.771.966-.946 1.165-.174.199-.349.224-.649.075-.3-.15-1.266-.464-2.41-1.484-.89-.794-1.49-1.775-1.665-2.074-.174-.3-.019-.462.13-.611.136-.134.301-.349.451-.524.15-.175.199-.299.299-.498.1-.2.05-.374-.025-.524-.075-.15-.672-1.62-.922-2.214-.244-.58-.492-.5-.675-.51-.174-.007-.373-.01-.573-.01-.2 0-.523.075-.797.373s-1.045 1.021-1.045 2.489c0 1.468 1.07 2.887 1.22 3.086.149.199 2.107 3.218 5.104 4.512.713.308 1.27.492 1.704.63.717.227 1.369.195 1.884.119.574-.085 1.767-.723 2.016-1.42.249-.697.249-1.295.174-1.42-.075-.124-.274-.199-.574-.348zM12.012 21.82h-.008a9.816 9.816 0 0 1-5.006-1.373l-.359-.213-3.724.976.994-3.63-.234-.372A9.82 9.82 0 0 1 2.2 11.96c0-5.422 4.41-9.832 9.832-9.832a9.78 9.78 0 0 1 6.962 2.888 9.78 9.78 0 0 1 2.88 6.952c-.004 5.424-4.416 9.832-9.862 9.832zM12.012 0C5.388 0 0 5.388 0 12.012c0 2.116.553 4.183 1.603 6.002L0 24l6.166-1.617a11.96 11.96 0 0 0 5.846 1.509h.005c6.623 0 12.011-5.389 12.011-12.013A11.935 11.935 0 0 0 20.53 3.52 11.94 11.94 0 0 0 12.012 0z"/>
-        </svg>
-      </span>
+      <span class="whatsapp-float__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.301-.15-1.767-.867-2.04-.966-.274-.101-.473-.15-.673.15-.199.299-.771.966-.946 1.165-.174.199-.349.224-.649.075-.3-.15-1.266-.464-2.41-1.484-.89-.794-1.49-1.775-1.665-2.074-.174-.3-.019-.462.13-.611.136-.134.301-.349.451-.524.15-.175.199-.299.299-.498.1-.2.05-.374-.025-.524-.075-.15-.672-1.62-.922-2.214-.244-.58-.492-.5-.675-.51-.174-.007-.373-.01-.573-.01-.2 0-.523.075-.797.373s-1.045 1.021-1.045 2.489c0 1.468 1.07 2.887 1.22 3.086.149.199 2.107 3.218 5.104 4.512.713.308 1.27.492 1.704.63.717.227 1.369.195 1.884.119.574-.085 1.767-.723 2.016-1.42.249-.697.249-1.295.174-1.42-.075-.124-.274-.199-.574-.348zM12.012 21.82h-.008a9.816 9.816 0 0 1-5.006-1.373l-.359-.213-3.724.976.994-3.63-.234-.372A9.82 9.82 0 0 1 2.2 11.96c0-5.422 4.41-9.832 9.832-9.832a9.78 9.78 0 0 1 6.962 2.888 9.78 9.78 0 0 1 2.88 6.952c-.004 5.424-4.416 9.832-9.862 9.832zM12.012 0C5.388 0 0 5.388 0 12.012c0 2.116.553 4.183 1.603 6.002L0 24l6.166-1.617a11.96 11.96 0 0 0 5.846 1.509h.005c6.623 0 12.011-5.389 12.011-12.013A11.935 11.935 0 0 0 20.53 3.52 11.94 11.94 0 0 0 12.012 0z"/></svg></span>
     </a>
-
     <dialog class="lightbox" data-lightbox-dialog aria-label="Aperçu du projet">
       <button class="lightbox__close" type="button" aria-label="Fermer l'aperçu" data-lightbox-close>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="m6 6 12 12M18 6 6 18" />
-        </svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
       </button>
       <figure>
         <img src="" alt="" data-lightbox-image />
