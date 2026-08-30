@@ -443,6 +443,24 @@ svg:not([width]) {
   will-change: transform;
 }
 
+.hero__media--home {
+  background-image: url("assets/hero-home.png");
+  background-position: 72% center;
+  filter: saturate(0.9) contrast(1.05) brightness(0.92);
+}
+
+.hero__media--peinture {
+  background-image: url("assets/hero-peinture-placo.png");
+  background-position: 62% center;
+  filter: saturate(0.95) contrast(1.04) brightness(0.88);
+}
+
+.hero__media--bureau {
+  background-image: url("assets/hero-bureau-detudes.png");
+  background-position: 48% center;
+  filter: saturate(0.88) contrast(1.04) brightness(0.86);
+}
+
 .hero__overlay {
   background:
     linear-gradient(90deg, rgba(6, 24, 44, 0.95) 0%, rgba(0, 99, 166, 0.78) 52%, rgba(145, 194, 30, 0.2) 100%),
@@ -2290,6 +2308,18 @@ svg:not([width]) {
     background-position: 58% center;
   }
 
+  .hero__media--home {
+    background-position: 78% center;
+  }
+
+  .hero__media--peinture {
+    background-position: 72% center;
+  }
+
+  .hero__media--bureau {
+    background-position: 50% center;
+  }
+
   .hero__inner {
     padding-top: 120px;
     padding-bottom: 115px;
@@ -3862,5 +3892,120 @@ body.has-cookie-banner .whatsapp-float {
   .site-footer .container.footer-shell {
     padding-top: 48px;
     text-align: left;
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   Peinture & Placo — branche finitions
+   ═══════════════════════════════════════════════ */
+
+.theme-finitions {
+  --finitions-accent: #c45c26;
+  --finitions-accent-deep: #9a3f16;
+}
+
+.theme-finitions .button--primary,
+.theme-finitions .button--submit {
+  background: linear-gradient(135deg, #c45c26 0%, #9a3f16 100%);
+  border-color: rgba(255, 214, 170, 0.4);
+  box-shadow: 0 15px 35px rgba(154, 63, 22, 0.32);
+}
+
+.theme-finitions .button--primary:hover,
+.theme-finitions .button--submit:hover {
+  box-shadow: 0 20px 44px rgba(154, 63, 22, 0.42);
+}
+
+.theme-finitions .nav-cta {
+  border-color: rgba(196, 92, 38, 0.5);
+}
+
+.theme-finitions .site-header.is-scrolled .nav-cta,
+.theme-finitions .nav-cta:hover {
+  background: #c45c26;
+  border-color: transparent;
+}
+
+.theme-finitions .form-card__step {
+  color: #9a3f16;
+  background: rgba(196, 92, 38, 0.14);
+}
+
+.theme-finitions .eyebrow {
+  color: var(--finitions-accent-deep);
+}
+
+.theme-finitions .eyebrow--light {
+  color: #f0c4a8;
+}
+
+.reassure-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.reassure-strip span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(6, 24, 44, 0.35);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.reassure-strip span::before {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c45c26;
+  content: "";
+}
+
+.finition-grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 48px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+a.finition-card {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+}
+
+.finition-card .text-link {
+  margin-top: auto;
+  padding-top: 16px;
+  color: #c45c26;
+  font-size: 0.78rem;
+}
+
+.diff-grid {
+  display: grid;
+  gap: 18px;
+  margin-top: 40px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+@media (max-width: 1080px) {
+  .finition-grid,
+  .diff-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .finition-grid,
+  .diff-grid {
+    grid-template-columns: 1fr;
   }
 }
