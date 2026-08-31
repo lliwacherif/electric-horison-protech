@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/expertises",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/expertises/",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

@@ -83,7 +83,7 @@
             ]
       },
       "logo": "https://francebtp.vercel.app/assets/logo%20horison%20pro%20tech%20pro.jpeg",
-      "image": "https://francebtp.vercel.app/assets/Horison%20protech%20cover%20image.jpeg",
+      "image": "https://francebtp.vercel.app/assets/hero-bureau-detudes.png",
       "telephone": "+33625772130",
       "email": "horisonprotech@gmail.com",
       "address": {
@@ -141,14 +141,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://formsubmit.co" />
-    <link rel="preload" as="image" href="/assets/Horison%20protech%20cover%20image.jpeg" fetchpriority="high" />
+    <link rel="preload" as="image" href="/assets/hero-bureau-detudes.png" fetchpriority="high" />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles.css?v=20260831be" />
     <script src="/script.js" defer></script>
   </head>
-  <body>
+  <body class="page-bureau">
     <a class="skip-link" href="#main-content">Aller au contenu</a>
     <header class="site-header" data-header>
+      <div class="be-topbar">
+        <div class="container be-topbar__inner">
+          <p>Île-de-France · Paris 12e</p>
+          <p>
+            <a href="tel:+33625772130">06 25 77 21 30</a>
+            <span aria-hidden="true">·</span>
+            <a href="mailto:horisonprotech@gmail.com">horisonprotech@gmail.com</a>
+          </p>
+        </div>
+      </div>
       <div class="container nav-shell">
         <a class="brand" href="/" aria-label="HORISON PRO TECH, retour à l'accueil">
           <span class="brand__logo">
@@ -167,7 +177,6 @@
           <a href="/">Accueil</a>
           <a href="/entreprise/">L'entreprise</a>
           <a href="/bureau-detudes/" class="is-active" aria-current="page">Bureau d'études</a>
-          <a href="/expertises/">Expertises</a>
           <a href="/colonnes-electriques-basse-tension/">Colonnes BT</a>
           <a href="/peinture-placo/">Peinture &amp; Placo</a>
           <a href="/realisations/">Réalisations</a>
@@ -179,71 +188,119 @@
       </div>
     </header>
     <main id="main-content">
-      <section class="hero hero--compact hero--editorial" id="accueil" aria-labelledby="hero-title">
-        <div class="hero__media hero__media--bureau" aria-hidden="true"></div>
-        <div class="hero__overlay" aria-hidden="true"></div>
-        <div class="container hero__inner">
-          <div class="hero__content" data-reveal>
-            <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a><span aria-hidden="true">/</span><span aria-current="page">Bureau d'études</span></nav>
-            <p class="eyebrow eyebrow--light"><span></span> Bureau d'études</p>
-            <h1 id="hero-title">Concevoir. Dimensionner.<br /><span>Préparer. Réaliser.</span></h1>
-            <p class="hero__lead">Notre bureau d'études intervient à chaque étape d'un projet électrique, de l'analyse du besoin jusqu'à la préparation de la réalisation, en garantissant la cohérence entre la conception et le chantier.</p>
-            <div class="hero__actions">
-              <a class="button button--primary" href="/contact/">Demander un devis <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
-            </div>
-          </div>
-        </div>
-        <div class="hero__curve" aria-hidden="true"></div>
-      </section>
-
-      <section class="services section-pad" id="prestations" aria-labelledby="be-title">
-        <div class="container">
-          <div class="services__intro" data-reveal>
-            <p class="eyebrow"><span></span> Prestations d'études</p>
-            <h2 id="be-title">De l'analyse du besoin aux documents de chantier.</h2>
-            <p class="services__lead">Nous nous appuyons sur un bureau d'études partenaire pour la conception, le dimensionnement et la préparation technique de nos projets, avant leur réalisation par nos équipes.</p>
-          </div>
-          <ol class="study-list">
-            <li data-reveal><b>01</b><span>Études électriques — analyse des besoins et conception des architectures électriques</span></li>
-            <li data-reveal data-reveal-delay="40"><b>02</b><span>Bilans de puissance — évaluation des besoins nécessaires au dimensionnement</span></li>
-            <li data-reveal data-reveal-delay="80"><b>03</b><span>Dimensionnement — caractéristiques des réseaux, équipements et protections</span></li>
-            <li data-reveal data-reveal-delay="120"><b>04</b><span>Notes de calcul et justification des solutions techniques</span></li>
-            <li data-reveal data-reveal-delay="160"><b>05</b><span>Plans et schémas électriques</span></li>
-            <li id="cfo-cfa" data-reveal data-reveal-delay="200"><b>06</b><span>Études CFO / CFA selon le périmètre du projet</span></li>
-            <li data-reveal data-reveal-delay="240"><b>07</b><span>Études d'exécution et préparation des documents de chantier</span></li>
-            <li id="doe" data-reveal data-reveal-delay="280"><b>08</b><span>DOE — dossier des ouvrages exécutés</span></li>
-          </ol>
+      <section class="be-hero" id="accueil" aria-labelledby="hero-title">
+        <figure class="be-hero__media">
+          <img src="/assets/hero-bureau-detudes.png" alt="Ingénieurs du bureau d'études HORISON PRO TECH collaborant sur des plans de bâtiment." width="1200" height="900" />
+        </figure>
+        <div class="be-hero__panel">
+          <p class="be-kicker be-kicker--light" data-reveal>
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            Bureau d'études · Île-de-France
+          </p>
+          <h1 id="hero-title" data-reveal>Concevoir.<br />Dimensionner.</h1>
+          <p class="be-hero__lead" data-reveal>Notre bureau d'études intervient à chaque étape d'un projet électrique, de l'analyse du besoin jusqu'à la préparation de la réalisation. La conception et le chantier restent dans la même chaîne.</p>
+          <a class="be-btn be-btn--lime" href="/contact/" data-reveal>Demander un devis</a>
         </div>
       </section>
 
-      <section class="method-section section-pad" id="methode" aria-labelledby="process-title">
-        <div class="container">
-          <div class="section-heading" data-reveal>
-            <div>
-              <p class="eyebrow"><span></span> De l'étude au chantier</p>
-              <h2 id="process-title">Une chaîne continue, sans rupture entre le bureau et le terrain.</h2>
-            </div>
+      <section class="be-about" id="apropos" aria-labelledby="about-title">
+        <div class="container be-about__grid">
+          <div class="be-about__copy" data-reveal>
+            <p class="be-kicker">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              À propos
+            </p>
+            <h2 id="about-title">Un bureau d'études au service du chantier.</h2>
+            <p>HORISON PRO TECH s'appuie sur un bureau d'études partenaire pour concevoir, dimensionner et préparer vos installations électriques. Nos équipes en CDI réalisent ensuite le chantier, avec un interlocuteur unique du premier rendez-vous au DOE.</p>
+            <ul class="be-features">
+              <li>
+                <span class="be-features__icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+                <strong>Respect des délais</strong>
+              </li>
+              <li>
+                <span class="be-features__icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                <strong>Étude et exécution liées</strong>
+              </li>
+              <li>
+                <span class="be-features__icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 1 7 7c0 3.5-2.2 5.4-4.1 7.1-.7.6-1.4 1.2-1.9 2H11c-.5-.8-1.2-1.4-1.9-2C7.2 14.4 5 12.5 5 9a7 7 0 0 1 7-7z"/></svg></span>
+                <strong>15 ans d'expérience</strong>
+              </li>
+            </ul>
+            <a class="be-btn be-btn--navy" href="/realisations/">Réalisations</a>
           </div>
-          <ol class="process-track">
-            <li data-reveal><span>01</span><strong>Analyse</strong></li>
-            <li data-reveal data-reveal-delay="40"><span>02</span><strong>Conception</strong></li>
-            <li data-reveal data-reveal-delay="80"><span>03</span><strong>Dimensionnement</strong></li>
-            <li data-reveal data-reveal-delay="120"><span>04</span><strong>Plans &amp; schémas</strong></li>
-            <li data-reveal data-reveal-delay="160"><span>05</span><strong>Préparation</strong></li>
-            <li data-reveal data-reveal-delay="200"><span>06</span><strong>Réalisation</strong></li>
-            <li data-reveal data-reveal-delay="240"><span>07</span><strong>Contrôle</strong></li>
-            <li data-reveal data-reveal-delay="280"><span>08</span><strong>Livraison</strong></li>
-          </ol>
-          <div class="cta-band" data-reveal style="margin-top:56px">
-            <div>
-              <h3>Besoin d'une étude électrique ?</h3>
-              <p>Transmettez-nous vos plans, CCTP ou photos. Nous préparons une réponse structurée.</p>
-            </div>
-            <a class="button button--primary" href="/contact/">Demander une étude <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          <div class="be-about__photos" data-reveal data-reveal-delay="120">
+            <img class="be-about__main" src="/assets/hero-bureau-detudes.png" alt="Travail d'étude sur plans et maquette de bâtiment." width="800" height="1000" />
+            <img class="be-about__inset" src="/assets/hero-home.png" alt="Technicien HORISON PRO TECH en contrôle électrique." width="640" height="480" />
           </div>
         </div>
       </section>
 
+      <section class="be-services" id="prestations" aria-labelledby="be-title">
+        <div class="container be-services__grid">
+          <div class="be-services__intro" data-reveal>
+            <p class="be-kicker">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              Prestations
+            </p>
+            <h2 id="be-title">Nos domaines d'études</h2>
+            <p>De l'analyse du besoin aux documents de fin de chantier, pour le résidentiel, le tertiaire, les commerces et les ERP.</p>
+            <a class="be-btn be-btn--navy" href="/contact/">Demander une étude</a>
+          </div>
+          <ul class="be-services__list">
+            <li data-reveal>
+              <span class="be-services__icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+              <h3>Étude électrique</h3>
+              <p>Analyse des besoins et conception des architectures électriques du bâtiment.</p>
+            </li>
+            <li data-reveal data-reveal-delay="40">
+              <span class="be-services__icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24"><path d="M4 19h16M8 19V8m4 11V5m4 14v-7"/></svg></span>
+              <h3>Bilan de puissance</h3>
+              <p>Évaluation des charges pour dimensionner réseaux, équipements et protections.</p>
+            </li>
+            <li data-reveal data-reveal-delay="80">
+              <span class="be-services__icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></span>
+              <h3>Dimensionnement</h3>
+              <p>Caractéristiques des réseaux, notes de calcul et justification des solutions.</p>
+            </li>
+            <li data-reveal data-reveal-delay="120">
+              <span class="be-services__icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+              <h3>Plans &amp; schémas</h3>
+              <p>Plans, schémas électriques et documents de préparation de chantier.</p>
+            </li>
+            <li id="cfo-cfa" data-reveal data-reveal-delay="160">
+              <span class="be-services__icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24"><path d="M4 11h16M4 7h16M4 15h10M4 19h7"/></svg></span>
+              <h3>CFO / CFA</h3>
+              <p>Études des courants forts et courants faibles selon le périmètre du projet.</p>
+            </li>
+            <li id="doe" data-reveal data-reveal-delay="200">
+              <span class="be-services__icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></span>
+              <h3>DOE</h3>
+              <p>Dossier des ouvrages exécutés, contrôles et documents de livraison.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="be-stats" aria-label="Chiffres clés">
+        <div class="container be-stats__grid">
+          <article><strong>15</strong><span>Ans d'expérience</span></article>
+          <article><strong>1</strong><span>Interlocuteur unique</span></article>
+          <article><strong>~10</strong><span>Professionnels en CDI</span></article>
+          <article><strong>IDF</strong><span>Zone d'intervention</span></article>
+        </div>
+      </section>
+
+      <section class="be-contact" id="methode" aria-labelledby="be-contact-title">
+        <div class="container be-contact__inner" data-reveal>
+          <p class="be-kicker">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            Contactez-nous
+          </p>
+          <h2 id="be-contact-title">Un projet d'étude électrique ?</h2>
+          <p>Transmettez-nous vos plans, CCTP ou photos. Nous préparons une réponse structurée, de l'étude à la réalisation.</p>
+          <a class="be-btn be-btn--navy" href="/contact/">Nous contacter</a>
+        </div>
+      </section>
     </main>
     <footer class="site-footer" role="contentinfo">
       <div class="container footer-shell">
@@ -271,7 +328,7 @@
           </nav>
           <nav class="footer-col" aria-label="Expertises">
             <h3>Nos expertises</h3>
-            <a href="/expertises/">Résidentiel, tertiaire, ERP</a>
+            <a href="/#domaines">Résidentiel, tertiaire, ERP</a>
             <a href="/colonnes-electriques-basse-tension/">Colonnes électriques BT</a>
             <a href="/peinture-placo/">Peinture &amp; Placo</a>
             <a href="/realisations/">Réalisations</a>
