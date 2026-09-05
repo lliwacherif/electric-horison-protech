@@ -9,6 +9,16 @@
       "source": "/expertises/",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/realisations",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/realisations/",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }

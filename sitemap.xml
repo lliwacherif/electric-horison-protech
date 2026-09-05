@@ -79,12 +79,6 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://francebtp.vercel.app/realisations/</loc>
-    <lastmod>2026-08-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://francebtp.vercel.app/contact/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
